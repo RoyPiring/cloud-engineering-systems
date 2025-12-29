@@ -1,6 +1,9 @@
 # Security and Compliance Engineering
 **Domain:** Security & Governance
 
+## System Architecture
+<img width="2752" height="1536" alt="security-and-compliance-engineering-architecture" src="https://github.com/user-attachments/assets/97e030d1-d8a4-4f4a-899c-3531280bd473" />
+
 ## Executive Summary
 
 This repository documents a **comprehensive security and compliance baseline** designed and validated against real-world requirements for access control, data protection, threat detection, and regulatory compliance.
