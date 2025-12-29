@@ -1,4 +1,4 @@
-<img width="2752" height="1536" alt="application-architecture-engineering-architecture" src="https://github.com/user-attachments/assets/f7c7cb19-6e58-4519-9880-3edd11c0d593" /># VPC Networking Engineering  
+# VPC Networking Engineering  
 **Domain:** Cloud Network Architecture and Security Engineering
 
 ## System Architecture
