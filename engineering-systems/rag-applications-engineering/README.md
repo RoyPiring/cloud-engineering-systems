@@ -1,6 +1,9 @@
 # RAG Applications Engineering
 **Domain:** Knowledge-Grounded AI Applications
 
+## System Architecture
+<img width="2752" height="1536" alt="rag-applications-engineering-architecture" src="https://github.com/user-attachments/assets/c4aa359a-0de7-4fdf-a286-e09337a5b57e" />
+
 ## Executive Summary
 
 This repository documents **Retrieval-Augmented Generation (RAG) applications** designed and validated against real-world requirements for response accuracy, retrieval quality, cost efficiency, and performance.
