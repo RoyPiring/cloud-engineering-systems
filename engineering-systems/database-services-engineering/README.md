@@ -1,6 +1,9 @@
 # Database Services Engineering
 **Domain:** Data Layer Architecture
 
+## System Architecture
+<img width="2752" height="1536" alt="database-services-engineering- architecture" src="https://github.com/user-attachments/assets/b2e64118-b175-4a7d-b6ac-55eb49790304" />
+
 ## Executive Summary
 
 This repository documents **data layer architecture and optimization** designed and validated against real-world requirements for performance, availability, scalability, and cost efficiency.
