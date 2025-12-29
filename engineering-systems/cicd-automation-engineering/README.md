@@ -1,6 +1,9 @@
 # CI/CD Automation Engineering
 **Domain:** Software Delivery & DevOps
 
+## System Architecture
+<img width="2752" height="1536" alt="cicd-automation-engineering-architecture" src="https://github.com/user-attachments/assets/dc7d01a2-d9da-484d-b185-7900215d4c6e" />
+
 ## Executive Summary
 
 This repository documents an **automated software delivery pipeline** designed and validated against real-world requirements for deployment reliability, security enforcement, build consistency, and operational velocity.
