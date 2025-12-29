@@ -22,18 +22,18 @@ Each Engineering System is a **complete, validated cloud system** and serves as 
 
 ## Engineering Systems Index
 
-| System | What It Proves | Start Here | Evidence |
-|------|---------------|-----------|----------|
-| [VPC Networking Engineering](./vpc-networking-engineering/README.md) | Secure network baselines and segmentation | [implementation.md](./vpc-networking-engineering/implementation.md) | [validation.md](./vpc-networking-engineering/validation.md) |
-| [Security and Compliance Engineering](./security-and-compliance-engineering/README.md) | Access controls, secrets, threat detection | [implementation.md](./security-and-compliance-engineering/implementation.md) | [validation.md](./security-and-compliance-engineering/validation.md) |
-| [CI/CD Automation Engineering](./cicd-automation-engineering/README.md) | Automated delivery, policy gates, rollback | [implementation.md](./cicd-automation-engineering/implementation.md) | [validation.md](./cicd-automation-engineering/validation.md) |
-| [Application Architecture Engineering](./application-architecture-engineering/README.md) | Cloud-native application design | [implementation.md](./application-architecture-engineering/implementation.md) | [validation.md](./application-architecture-engineering/validation.md) |
-| [Database Services Engineering](./database-services-engineering/README.md) | Data-layer architecture and optimization | [implementation.md](./database-services-engineering/implementation.md) | [validation.md](./database-services-engineering/validation.md) |
-| [Conversational AI Engineering](./conversational-ai-engineering/README.md) | Conversational AI system design | [implementation.md](./conversational-ai-engineering/implementation.md) | [validation.md](./conversational-ai-engineering/validation.md) |
-| [RAG Applications Engineering](./rag-applications-engineering/README.md) | Knowledge-grounded AI systems | [implementation.md](./rag-applications-engineering/implementation.md) | [validation.md](./rag-applications-engineering/validation.md) |
-| [Data Engineering Analytics Engineering](./data-engineering-analytics-engineering/README.md) | Data pipelines and analytics workflows | [implementation.md](./data-engineering-analytics-engineering/implementation.md) | [validation.md](./data-engineering-analytics-engineering/validation.md) |
-| [AI-Powered Development Engineering](./ai-powered-development-engineering/README.md) | Developer productivity systems | [implementation.md](./ai-powered-development-engineering/implementation.md) | [validation.md](./ai-powered-development-engineering/validation.md) |
-| [Single-Scope Engineering](./single-scope/README.md) | Isolated labs and prerequisites | [README.md](./single-scope/README.md) | [validation.md](./single-scope/validation.md) |
+| System | What It Proves | Start Here | Execution | Evidence |
+|------|---------------|-----------|----------|----------|
+| [VPC Networking Engineering](./vpc-networking-engineering/README.md) | Secure network baselines and segmentation | [implementation.md](./vpc-networking-engineering/implementation.md) | [executions/](./vpc-networking-engineering/executions/) | [validation.md](./vpc-networking-engineering/validation.md) |
+| [Security and Compliance Engineering](./security-and-compliance-engineering/README.md) | Access controls, secrets, threat detection | [implementation.md](./security-and-compliance-engineering/implementation.md) | [executions/](./security-and-compliance-engineering/executions/) | [validation.md](./security-and-compliance-engineering/validation.md) |
+| [CI/CD Automation Engineering](./cicd-automation-engineering/README.md) | Automated delivery, policy gates, rollback | [implementation.md](./cicd-automation-engineering/implementation.md) | [executions/](./cicd-automation-engineering/executions/) | [validation.md](./cicd-automation-engineering/validation.md) |
+| [Application Architecture Engineering](./application-architecture-engineering/README.md) | Cloud-native application design | [implementation.md](./application-architecture-engineering/implementation.md) | [executions/](./application-architecture-engineering/executions/) | [validation.md](./application-architecture-engineering/validation.md) |
+| [Database Services Engineering](./database-services-engineering/README.md) | Data-layer architecture and optimization | [implementation.md](./database-services-engineering/implementation.md) | [executions/](./database-services-engineering/executions/) | [validation.md](./database-services-engineering/validation.md) |
+| [Conversational AI Engineering](./conversational-ai-engineering/README.md) | Conversational AI system design | [implementation.md](./conversational-ai-engineering/implementation.md) | [executions/](./conversational-ai-engineering/executions/) | [validation.md](./conversational-ai-engineering/validation.md) |
+| [RAG Applications Engineering](./rag-applications-engineering/README.md) | Knowledge-grounded AI systems | [implementation.md](./rag-applications-engineering/implementation.md) | [executions/](./rag-applications-engineering/executions/) | [validation.md](./rag-applications-engineering/validation.md) |
+| [Data Engineering Analytics Engineering](./data-engineering-analytics-engineering/README.md) | Data pipelines and analytics workflows | [implementation.md](./data-engineering-analytics-engineering/implementation.md) | [executions/](./data-engineering-analytics-engineering/executions/) | [validation.md](./data-engineering-analytics-engineering/validation.md) |
+| [AI-Powered Development Engineering](./ai-powered-development-engineering/README.md) | Developer productivity systems | [implementation.md](./ai-powered-development-engineering/implementation.md) | [executions/](./ai-powered-development-engineering/executions/) | [validation.md](./ai-powered-development-engineering/validation.md) |
+| [Single-Scope Engineering](./single-scope/README.md) | Isolated labs and prerequisites | [README.md](./single-scope/README.md) | [executions/](./single-scope/executions/) | [validation.md](./single-scope/validation.md) |
 
 ---
 
