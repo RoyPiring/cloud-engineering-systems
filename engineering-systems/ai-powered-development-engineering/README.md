@@ -1,6 +1,10 @@
 # AI-Powered Development Engineering
 **Domain:** Developer Productivity & Tooling
 
+## System Architecture
+<img width="2752" height="1536" alt="ai-powered-development-architecture" src="https://github.com/user-attachments/assets/b5f6b3e4-a09d-42a1-8354-57f0853ac292" />
+
+
 ## Executive Summary
 
 This repository documents **AI-powered development environments and tooling** designed and validated against real-world requirements for productivity, code quality, cost efficiency, and integration quality.
