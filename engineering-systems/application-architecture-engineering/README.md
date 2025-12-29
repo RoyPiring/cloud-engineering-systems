@@ -1,6 +1,9 @@
 # Application Architecture Engineering
 **Domain:** Full-Stack Application Development
 
+## System Architecture
+<img width="2752" height="1536" alt="application-architecture-engineering-architecture" src="https://github.com/user-attachments/assets/f528c6b3-acb9-41bc-887c-bcd1b6af4641" />
+
 ## Executive Summary
 
 This repository documents **cloud-native application architectures** designed and validated against real-world requirements for scalability, reliability, cost efficiency, and operational simplicity.
