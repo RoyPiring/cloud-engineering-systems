@@ -1,6 +1,9 @@
 # Conversational AI Engineering
 **Domain:** Conversational AI Applications
 
+## System Architecture
+<img width="2752" height="1536" alt="conversational-ai-engineering-architecture" src="https://github.com/user-attachments/assets/7946e400-2cce-4d1a-9b85-802929687e3a" />
+
 ## Executive Summary
 
 This repository documents **conversational AI applications** designed and validated against real-world requirements for conversation quality, response latency, reliability, and cost efficiency.
