@@ -6,10 +6,6 @@ This system enforces network isolation through VPC boundaries, restricts access 
 **Evidence:** [Full Validation Report](../../engineering-systems/vpc-networking-engineering/validation.md)
 
 ---
-## System Architecture
-<img width="2752" height="1536" alt="vpc-networking-engineering-architecture" src="https://github.com/user-attachments/assets/16e0fc76-191a-4586-a2eb-554d9519b5f8" />
-
----
 
 ## Engineering Judgment Highlights
 
