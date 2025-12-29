@@ -1,6 +1,10 @@
 # Data Engineering Analytics Engineering
 **Domain:** Data Engineering & Analytics
 
+## System Architecture
+<img width="2752" height="1536" alt="data-engineering-and-analytics-engineering-architecture" src="https://github.com/user-attachments/assets/1753a8e4-800b-41af-be9d-f1231330335e" />
+
+
 ## Executive Summary
 
 This repository documents **data engineering workflows and analytics systems** designed and validated against real-world requirements for query performance, pipeline reliability, data quality, and cost efficiency.
