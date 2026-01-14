@@ -2,7 +2,7 @@
 **Domain:** Knowledge Service Delivery & DevOps
 
 ## System Architecture
-<img width="2752" height="1536" alt="rag-knowledge-service-delivery-assurance-engineering-architecture" src="architecture-diagram-placeholder" />
+<img width="2370" height="1279" alt="image" src="https://github.com/user-attachments/assets/775cc2c3-b606-4d19-91ef-438de9f5484d" />
 
 ## Executive Summary
 
