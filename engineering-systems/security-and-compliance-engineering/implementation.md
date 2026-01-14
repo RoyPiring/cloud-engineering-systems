@@ -161,6 +161,16 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
+## Execution Path (Start to Finish)
+
+1. **[01-iam-least-privilege.md](./executions/01-iam-least-privilege.md)**: Identity and access management with least-privilege principles
+2. **[02-secrets-management.md](./executions/02-secrets-management.md)**: Secure credential storage and automated rotation
+3. **[03-boundary-enforcement.md](./executions/03-boundary-enforcement.md)**: Encryption boundaries and key management (KMS)
+4. **[04-compliance-checklist.md](./executions/04-compliance-checklist.md)**: Security monitoring and compliance validation
+5. **[05-evidence-collection.md](./executions/05-evidence-collection.md)**: Threat detection with GuardDuty and audit evidence
+
+---
+
 ## Executions
 
 The `executions/` directory contains detailed guides for specific security implementations:

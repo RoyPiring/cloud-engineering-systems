@@ -155,6 +155,20 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
+## Execution Path (Start to Finish)
+
+1. **[01-cicd-introduction.md](./executions/01-cicd-introduction.md)**: DevOps principles and CI/CD concepts
+2. **[02-source-control-github.md](./executions/02-source-control-github.md)**: GitHub integration and webhook configuration
+3. **[03-environment-bootstrap.md](./executions/03-environment-bootstrap.md)**: Development environment setup
+4. **[04-infrastructure-cloudformation.md](./executions/04-infrastructure-cloudformation.md)**: AWS-native infrastructure automation
+5. **[05-build-automation-codebuild.md](./executions/05-build-automation-codebuild.md)**: Automated build and test execution
+6. **[06-package-management-codeartifact.md](./executions/06-package-management-codeartifact.md)**: Dependency and artifact management
+7. **[07-idempotent-provisioning.md](./executions/07-idempotent-provisioning.md)**: Infrastructure as Code with idempotency
+8. **[08-guardrail-enforcement.md](./executions/08-guardrail-enforcement.md)**: Security and compliance policy gates
+9. **[09-rollback-procedure.md](./executions/09-rollback-procedure.md)**: Automated rollback on deployment failure
+
+---
+
 ## Executions
 
 The `executions/` directory contains detailed guides for specific automation implementations:

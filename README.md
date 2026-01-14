@@ -75,7 +75,7 @@ The Feature Systems above demonstrate representative, validated outcomes across 
 Additional complete Engineering Systems are available under `engineering-systems/`.  
 Each is independently reviewable with full documentation and validation.
 
-- **[Engineering Systems README](./engineering-systems/README.md)** – Application Architecture, Database Services, Conversational AI, RAG Applications, Data Engineering Analytics, AI-Powered Development
+- **[Engineering Systems README](./engineering-systems/README.md)** – Application Architecture, Database Services, Conversational AI, RAG Applications, RAG Knowledge Service Delivery Assurance, Data Engineering Analytics, AI-Powered Development
 - **[Single-Scope Engineering](./engineering-systems/single-scope/README.md)** – Standalone labs and prerequisites
 
 ---
