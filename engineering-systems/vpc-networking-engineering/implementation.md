@@ -220,6 +220,22 @@ Failures are expected and planned for.
 
 ---
 
+## Execution Path (Start to Finish)
+
+1. **[01-networking-introduction.md](./executions/01-networking-introduction.md)**: Networking introduction and VPC foundation
+2. **[02-subnet-segmentation.md](./executions/02-subnet-segmentation.md)**: Subnet segmentation and tiering
+3. **[03-routing-boundaries.md](./executions/03-routing-boundaries.md)**: Routing boundaries and connectivity
+4. **[04-network-security-groups.md](./executions/04-network-security-groups.md)**: Network security groups and controls
+5. **[05-vpc-endpoints.md](./executions/05-vpc-endpoints.md)**: VPC endpoints for private service access
+6. **[06-s3-networking.md](./executions/06-s3-networking.md)**: S3 networking and integration
+7. **[07-ec2-networking.md](./executions/07-ec2-networking.md)**: EC2 networking behavior
+8. **[08-vpc-peering-advanced.md](./executions/08-vpc-peering-advanced.md)**: VPC peering and multi-VPC connectivity
+9. **[09-cloudfront-integration.md](./executions/09-cloudfront-integration.md)**: CloudFront integration
+10. **[10-isolated-network-test.md](./executions/10-isolated-network-test.md)**: Isolated network test and validation
+11. **[11-flow-logs-validation.md](./executions/11-flow-logs-validation.md)**: Flow logs validation and observability
+
+---
+
 ## Execution Summary
 
 This implementation translates architectural intent into a working system through controlled sequencing, explicit guardrails, and continuous validation.

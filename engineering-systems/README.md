@@ -31,6 +31,7 @@ Each Engineering System is a **complete, validated cloud system** and serves as 
 | [Database Services Engineering](./database-services-engineering/README.md) | Data-layer architecture and optimization | [implementation.md](./database-services-engineering/implementation.md) | [executions/](./database-services-engineering/executions/) | [validation.md](./database-services-engineering/validation.md) |
 | [Conversational AI Engineering](./conversational-ai-engineering/README.md) | Conversational AI system design | [implementation.md](./conversational-ai-engineering/implementation.md) | [executions/](./conversational-ai-engineering/executions/) | [validation.md](./conversational-ai-engineering/validation.md) |
 | [RAG Applications Engineering](./rag-applications-engineering/README.md) | Knowledge-grounded AI systems | [implementation.md](./rag-applications-engineering/implementation.md) | [executions/](./rag-applications-engineering/executions/) | [validation.md](./rag-applications-engineering/validation.md) |
+| [RAG Knowledge Service Delivery Assurance Engineering](./rag-knowledge-service-delivery-assurance-engineering/README.md) | Production-ready RAG service delivery from development through deployment and testing | [implementation.md](./rag-knowledge-service-delivery-assurance-engineering/implementation.md) | [executions/](./rag-knowledge-service-delivery-assurance-engineering/executions/) | [validation.md](./rag-knowledge-service-delivery-assurance-engineering/validation.md) |
 | [Data Engineering Analytics Engineering](./data-engineering-analytics-engineering/README.md) | Data pipelines and analytics workflows | [implementation.md](./data-engineering-analytics-engineering/implementation.md) | [executions/](./data-engineering-analytics-engineering/executions/) | [validation.md](./data-engineering-analytics-engineering/validation.md) |
 | [AI-Powered Development Engineering](./ai-powered-development-engineering/README.md) | Developer productivity systems | [implementation.md](./ai-powered-development-engineering/implementation.md) | [executions/](./ai-powered-development-engineering/executions/) | [validation.md](./ai-powered-development-engineering/validation.md) |
 | [Single-Scope Engineering](./single-scope/README.md) | Isolated labs and prerequisites | [README.md](./single-scope/README.md) | [executions/](./single-scope/executions/) | [validation.md](./single-scope/validation.md) |
@@ -59,6 +60,7 @@ Each is a peer Engineering System and can be reviewed independently.
 - [Database Services Engineering](./database-services-engineering/README.md)  
 - [Conversational AI Engineering](./conversational-ai-engineering/README.md)  
 - [RAG Applications Engineering](./rag-applications-engineering/README.md)  
+- [RAG Knowledge Service Delivery Assurance Engineering](./rag-knowledge-service-delivery-assurance-engineering/README.md)  
 - [Data Engineering Analytics Engineering](./data-engineering-analytics-engineering/README.md)  
 - [AI-Powered Development Engineering](./ai-powered-development-engineering/README.md)  
 
