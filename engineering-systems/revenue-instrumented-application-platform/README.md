@@ -2,7 +2,7 @@
 **Domain:** Application Platform & Revenue Operations
 
 ## System Architecture
-<img width="2752" height="1536" alt="revenue-instrumented-application-platform-architecture" src="https://github.com/user-attachments/assets/placeholder-revenue-instrumented-application-platform" />
+<img width="2364" height="1298" alt="image" src="https://github.com/user-attachments/assets/508dde70-3aec-4d15-9253-06bbc1bdca75" />
 
 ## Executive Summary
 
