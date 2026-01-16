@@ -153,6 +153,19 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 ---
 
+## Boundaries
+
+This engineering system operates within the following boundaries:
+
+- **Policy Constraints:** AI tool selection limited to approved tools; no custom AI model training; code quality standards must be maintained ([constraints](./business-context.md#constraints))
+- **Organizational Constraints:** Team adoption and learning curve; integration with existing development tools; limited budget for AI tools (<$30/month per developer) ([constraints](./business-context.md#constraints))
+- **Technical Constraints:** IDE compatibility requirements; MCP protocol support required; single region deployment (us-east-1) ([constraints](./architecture.md#constraints))
+- **Cost Boundaries:** AI tooling budget <$30/month per developer for lab environment ([cost model](./architecture.md#cost-model))
+
+Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+
+---
+
 ## Summary
 
 This repository represents a complete AI-powered development lifecycle: from problem framing, through design and execution, to validation.

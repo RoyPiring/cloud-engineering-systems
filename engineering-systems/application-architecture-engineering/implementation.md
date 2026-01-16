@@ -154,19 +154,17 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Executions
+## Execution Path (Start to Finish)
 
-The `executions/` directory contains detailed guides for specific application implementations:
-
-1. **[Serverless Foundation Lambda](./executions/01-serverless-foundation-lambda.md)** - Serverless compute with Lambda
-2. **[API Layer Gateway Lambda](./executions/02-api-layer-gateway-lambda.md)** - RESTful APIs with API Gateway
-3. **[Complete Three-Tier Application](./executions/03-complete-three-tier-application.md)** - Full-stack application deployment
-4. **[Container Deployment Elastic Beanstalk](./executions/04-container-deployment-elastic-beanstalk.md)** - Platform-as-a-Service deployment
-5. **[Container Registry ECR](./executions/05-container-registry-ecr.md)** - Container image management
-6. **[Kubernetes Cluster EKS Part 1](./executions/06-kubernetes-cluster-eks-part1.md)** - EKS cluster creation
-7. **[Kubernetes Deployment EKS Part 2](./executions/07-kubernetes-deployment-eks-part2.md)** - Application deployment to K8s
-8. **[Kubernetes Scaling EKS Part 3](./executions/08-kubernetes-scaling-eks-part3.md)** - Scaling patterns
-9. **[Kubernetes Advanced EKS Part 4](./executions/09-kubernetes-advanced-eks-part4.md)** - Advanced Kubernetes patterns
+1. **[01-serverless-foundation-lambda.md](./executions/01-serverless-foundation-lambda.md)**: Serverless compute with Lambda
+2. **[02-api-layer-gateway-lambda.md](./executions/02-api-layer-gateway-lambda.md)**: RESTful APIs with API Gateway
+3. **[03-complete-three-tier-application.md](./executions/03-complete-three-tier-application.md)**: Full-stack application deployment
+4. **[04-container-deployment-elastic-beanstalk.md](./executions/04-container-deployment-elastic-beanstalk.md)**: Platform-as-a-Service deployment
+5. **[05-container-registry-ecr.md](./executions/05-container-registry-ecr.md)**: Container image management
+6. **[06-kubernetes-cluster-eks-part1.md](./executions/06-kubernetes-cluster-eks-part1.md)**: EKS cluster creation
+7. **[07-kubernetes-deployment-eks-part2.md](./executions/07-kubernetes-deployment-eks-part2.md)**: Application deployment to K8s
+8. **[08-kubernetes-scaling-eks-part3.md](./executions/08-kubernetes-scaling-eks-part3.md)**: Scaling patterns
+9. **[09-kubernetes-advanced-eks-part4.md](./executions/09-kubernetes-advanced-eks-part4.md)**: Advanced Kubernetes patterns
 
 ---
 

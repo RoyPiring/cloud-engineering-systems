@@ -111,13 +111,11 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Executions
+## Execution Path (Start to Finish)
 
-The `executions/` directory contains detailed guides for specific AI-powered development implementations:
-
-1. **[AI Workspace Cursor](./executions/01-ai-workspace-cursor.md)** - Cursor IDE setup and AI-powered coding
-2. **[AI Workspace Claude Code](./executions/02-ai-workspace-claude-code.md)** - Claude Code IDE setup and configuration
-3. **[AI Workspace MCP](./executions/03-ai-workspace-mcp.md)** - Model Context Protocol integration
+1. **[01-ai-workspace-cursor.md](./executions/01-ai-workspace-cursor.md)**: Cursor IDE setup and AI-powered coding
+2. **[02-ai-workspace-claude-code.md](./executions/02-ai-workspace-claude-code.md)**: Claude Code IDE setup and configuration
+3. **[03-ai-workspace-mcp.md](./executions/03-ai-workspace-mcp.md)**: Model Context Protocol integration
 
 ---
 

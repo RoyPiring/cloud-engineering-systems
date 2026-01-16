@@ -152,6 +152,19 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 ---
 
+## Boundaries
+
+This engineering system operates within the following boundaries:
+
+- **Policy Constraints:** Database selection based on workload characteristics; no custom database engine development; managed services preferred ([constraints](./business-context.md#constraints))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing applications; budget constraints ([constraints](./business-context.md#constraints))
+- **Technical Constraints:** AWS-native database services required; single region deployment; high availability requirements ([constraints](./architecture.md#constraints))
+- **Cost Boundaries:** Database costs <$50/month for lab environment; production costs scale with usage ([cost model](./architecture.md#cost-model))
+
+Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+
+---
+
 ## Summary
 
 This repository represents a complete database architecture lifecycle: from problem framing, through design and execution, to validation.

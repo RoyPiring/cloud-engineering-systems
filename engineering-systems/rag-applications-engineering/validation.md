@@ -101,6 +101,17 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| RAG Foundation Bedrock | `./executions/01-rag-foundation-bedrock.md` | Knowledge base setup and configuration |
+| RAG CloudShell Implementation | `./executions/02-rag-cloudshell-implementation.md` | Local development and testing |
+| RAG API Integration | `./executions/03-rag-api-integration.md` | API design and Bedrock integration |
+| RAG Complete Webapp | `./executions/04-rag-complete-webapp.md` | Full-stack RAG application |
+
+---
+
 ## Known Limitations
 
 - Validation performed in non-production environment

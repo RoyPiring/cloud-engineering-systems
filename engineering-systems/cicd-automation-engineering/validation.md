@@ -136,6 +136,22 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| CI/CD Introduction | `./executions/01-cicd-introduction.md` | CI/CD pipeline concepts |
+| Source Control GitHub | `./executions/02-source-control-github.md` | GitHub integration |
+| Environment Bootstrap | `./executions/03-environment-bootstrap.md` | Environment setup |
+| Infrastructure CloudFormation | `./executions/04-infrastructure-cloudformation.md` | Infrastructure as Code |
+| Build Automation CodeBuild | `./executions/05-build-automation-codebuild.md` | Build automation |
+| Package Management CodeArtifact | `./executions/06-package-management-codeartifact.md` | Package management |
+| Idempotent Provisioning | `./executions/07-idempotent-provisioning.md` | Idempotent provisioning |
+| Guardrail Enforcement | `./executions/08-guardrail-enforcement.md` | Policy gate enforcement |
+| Rollback Procedure | `./executions/09-rollback-procedure.md` | Rollback mechanisms |
+
+---
+
 ## Known Limitations
 
 - Validation performed in non-production environments

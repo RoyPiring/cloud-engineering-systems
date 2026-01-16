@@ -99,6 +99,17 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| Data Engineering Foundation | `./executions/01-data-engineering-foundation.md` | Database setup and MCP configuration |
+| Data Engineering Advanced | `./executions/02-data-engineering-advanced.md` | ETL/ELT pipeline implementation |
+| Data Engineering Optimization | `./executions/03-data-engineering-optimization.md` | Query optimization and indexing |
+| Data Engineering Production | `./executions/04-data-engineering-production.md` | Production patterns and monitoring |
+
+---
+
 ## Known Limitations
 
 - Validation performed in local Docker environment

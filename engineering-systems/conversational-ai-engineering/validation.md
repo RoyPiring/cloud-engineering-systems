@@ -104,6 +104,18 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| Lex Bot Creation | `./executions/02-lex-bot-creation.md` | Bot creation and configuration |
+| Intent Definition | `./executions/03-lex-intent-slot-definition.md` | Intent and slot definition |
+| Lambda Integration | `./executions/04-lex-lambda-integration.md` | Lambda fulfillment integration |
+| Testing and Deployment | `./executions/05-lex-testing-deployment.md` | Testing and deployment |
+| Advanced Conversations | `./executions/06-lex-advanced-conversations.md` | Multi-turn conversation support |
+
+---
+
 ## Known Limitations
 
 - Validation performed in non-production environment

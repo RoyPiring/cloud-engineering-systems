@@ -160,15 +160,13 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Executions
+## Execution Path (Start to Finish)
 
-The `executions/` directory contains detailed guides for specific database implementations:
-
-1. **[Databases Introduction](./executions/01-databases-introduction.md)** - Database types and selection criteria
-2. **[NoSQL DynamoDB](./executions/02-nosql-dynamodb.md)** - DynamoDB setup and data modeling
-3. **[Query Optimization](./executions/03-query-optimization.md)** - Indexing and performance tuning
-4. **[Relational Aurora](./executions/04-relational-aurora.md)** - Aurora cluster setup and high availability
-5. **[Database Webapp Integration](./executions/05-database-webapp-integration.md)** - Application-to-database integration
+1. **[01-databases-introduction.md](./executions/01-databases-introduction.md)**: Database types and selection criteria
+2. **[02-nosql-dynamodb.md](./executions/02-nosql-dynamodb.md)**: DynamoDB setup and data modeling
+3. **[03-query-optimization.md](./executions/03-query-optimization.md)**: Indexing and performance tuning
+4. **[04-relational-aurora.md](./executions/04-relational-aurora.md)**: Aurora cluster setup and high availability
+5. **[05-database-webapp-integration.md](./executions/05-database-webapp-integration.md)**: Application-to-database integration
 
 ---
 

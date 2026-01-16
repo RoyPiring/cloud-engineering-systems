@@ -86,6 +86,18 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| Database Introduction | `./executions/01-databases-introduction.md` | Database types and selection |
+| NoSQL DynamoDB | `./executions/02-nosql-dynamodb.md` | DynamoDB setup and modeling |
+| Query Optimization | `./executions/03-query-optimization.md` | Indexing and performance tuning |
+| Relational Aurora | `./executions/04-relational-aurora.md` | Aurora cluster setup |
+| Database Webapp Integration | `./executions/05-database-webapp-integration.md` | Application-to-database integration |
+
+---
+
 ## Known Limitations
 
 - Validation performed in non-production environment

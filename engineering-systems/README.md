@@ -34,6 +34,7 @@ Each Engineering System is a **complete, validated cloud system** and serves as 
 | [RAG Knowledge Service Delivery Assurance Engineering](./rag-knowledge-service-delivery-assurance-engineering/README.md) | Production-ready RAG service delivery from development through deployment and testing | [implementation.md](./rag-knowledge-service-delivery-assurance-engineering/implementation.md) | [executions/](./rag-knowledge-service-delivery-assurance-engineering/executions/) | [validation.md](./rag-knowledge-service-delivery-assurance-engineering/validation.md) |
 | [Data Engineering Analytics Engineering](./data-engineering-analytics-engineering/README.md) | Data pipelines and analytics workflows | [implementation.md](./data-engineering-analytics-engineering/implementation.md) | [executions/](./data-engineering-analytics-engineering/executions/) | [validation.md](./data-engineering-analytics-engineering/validation.md) |
 | [AI-Powered Development Engineering](./ai-powered-development-engineering/README.md) | Developer productivity systems | [implementation.md](./ai-powered-development-engineering/implementation.md) | [executions/](./ai-powered-development-engineering/executions/) | [validation.md](./ai-powered-development-engineering/validation.md) |
+| [Revenue-Instrumented Application Platform](./revenue-instrumented-application-platform/README.md) | Secure payment processing, privacy-compliant analytics, and rapid deployment | [implementation.md](./revenue-instrumented-application-platform/implementation.md) | [executions/](./revenue-instrumented-application-platform/executions/) | [validation.md](./revenue-instrumented-application-platform/validation.md) |
 | [Single-Scope Engineering](./single-scope/README.md) | Isolated labs and prerequisites | [README.md](./single-scope/README.md) | [executions/](./single-scope/executions/) | [validation.md](./single-scope/validation.md) |
 
 ---
@@ -63,6 +64,7 @@ Each is a peer Engineering System and can be reviewed independently.
 - [RAG Knowledge Service Delivery Assurance Engineering](./rag-knowledge-service-delivery-assurance-engineering/README.md)  
 - [Data Engineering Analytics Engineering](./data-engineering-analytics-engineering/README.md)  
 - [AI-Powered Development Engineering](./ai-powered-development-engineering/README.md)  
+- [Revenue-Instrumented Application Platform](./revenue-instrumented-application-platform/README.md)  
 
 ---
 

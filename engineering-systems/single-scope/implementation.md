@@ -245,6 +245,14 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
+## Execution Path (Start to Finish)
+
+The `executions/` directory contains standalone labs and prerequisite content organized by domain. Each execution is self-contained and can be completed independently.
+
+See the [executions directory](./executions/) for the complete list of available labs organized by category.
+
+---
+
 ## Validation Hooks
 
 Each phase includes validation checkpoints:

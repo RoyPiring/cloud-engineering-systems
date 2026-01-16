@@ -153,15 +153,14 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Executions
+## Execution Path (Start to Finish)
 
-The `executions/` directory contains detailed guides for specific conversational AI implementations:
-
-1. **[Conversational AI Introduction](./executions/01-conversational-ai-introduction.md)** - Conversational AI concepts and Lex overview
-2. **[Bot Creation Lex](./executions/02-bot-creation-lex.md)** - Amazon Lex bot creation and configuration
-3. **[Intent Slot Design](./executions/03-intent-slot-design.md)** - Intent and slot definition
-4. **[Lambda Integration](./executions/04-lambda-integration.md)** - Lambda fulfillment integration
-5. **[Multi-Turn Conversations](./executions/05-multi-turn-conversations.md)** - Multi-turn conversation support
+1. **[01-conversational-ai-introduction.md](./executions/01-conversational-ai-introduction.md)**: Conversational AI concepts and Lex overview
+2. **[02-lex-bot-creation.md](./executions/02-lex-bot-creation.md)**: Amazon Lex bot creation and configuration
+3. **[03-lex-intent-slot-definition.md](./executions/03-lex-intent-slot-definition.md)**: Intent and slot definition
+4. **[04-lex-lambda-integration.md](./executions/04-lex-lambda-integration.md)**: Lambda fulfillment integration
+5. **[05-lex-testing-deployment.md](./executions/05-lex-testing-deployment.md)**: Testing and deployment
+6. **[06-lex-advanced-conversations.md](./executions/06-lex-advanced-conversations.md)**: Multi-turn conversation support
 
 ---
 

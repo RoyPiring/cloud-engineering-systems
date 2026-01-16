@@ -140,6 +140,24 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| Networking Introduction | `./executions/01-networking-introduction.md` | Networking introduction and VPC foundation |
+| Subnet Segmentation | `./executions/02-subnet-segmentation.md` | Subnet segmentation and tiering |
+| Routing Boundaries | `./executions/03-routing-boundaries.md` | Routing boundaries and connectivity |
+| Network Security Groups | `./executions/04-network-security-groups.md` | Network security groups and controls |
+| VPC Endpoints | `./executions/05-vpc-endpoints.md` | VPC endpoints for private service access |
+| S3 Networking | `./executions/06-s3-networking.md` | S3 networking and integration |
+| EC2 Networking | `./executions/07-ec2-networking.md` | EC2 networking behavior |
+| VPC Peering Advanced | `./executions/08-vpc-peering-advanced.md` | VPC peering and multi-VPC connectivity |
+| CloudFront Integration | `./executions/09-cloudfront-integration.md` | CloudFront integration |
+| Isolated Network Test | `./executions/10-isolated-network-test.md` | Isolated network test and validation |
+| Flow Logs Validation | `./executions/11-flow-logs-validation.md` | Flow logs validation and observability |
+
+---
+
 ## Known Limitations
 
 - Validation performed in a single AWS region

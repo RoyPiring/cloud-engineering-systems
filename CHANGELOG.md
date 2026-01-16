@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026-01-16]
+
+### Changed
+
+- **Renamed Engineering System: Revenue-Instrumented Application Platform**
+  - Renamed system from "AI FinOps Checkout Platform Engineering" to "Revenue-Instrumented Application Platform"
+  - Updated all core documentation files:
+    - `README.md` - Updated system name, domain, and terminology throughout
+    - `business-context.md` - Updated system name and business context descriptions
+    - `architecture.md` - Updated system name and scope descriptions
+    - `implementation.md` - Updated system name and implementation descriptions
+    - `validation.md` - Updated system name and validation descriptions
+  - Updated system directory from `ai-finops-checkout-platform-engineering` to `revenue-instrumented-application-platform`
+  - Updated all terminology references from "checkout platform" to "revenue-instrumented application platform" for consistency
+  - Execution files maintained with original names (01-ai-finops-vercel.md, 02-ai-finops-stripe.md, 03-ai-finops-posthog.md)
+  - Updated image references to reflect new system naming
+
+- **Repository Index Updates**
+  - Updated `README.md` (root) to reference "Revenue-Instrumented Application Platform" in "More Engineering Systems" section
+  - Updated `engineering-systems/README.md` Engineering Systems Index table with new system name and directory path
+  - Updated `engineering-systems/README.md` Additional Engineering Systems list with new system name and directory path
+
+### Fixed
+
+- **Repository Quality and Consistency**
+  - Removed duplicate `ai-finops-checkout-platform-engineering` directory after successful rename
+  - Performed comprehensive quality check across all 12 engineering systems
+  - Verified all required sections present in all systems (System Architecture, How to Read This Repository, Boundaries, Execution Path, Evidence Map)
+  - Verified all navigation links and references are accurate and functional
+  - Confirmed 100% structural consistency across all engineering systems
+  - No linter errors detected
+
 ## [2026-01-14]
 
 ### Added
