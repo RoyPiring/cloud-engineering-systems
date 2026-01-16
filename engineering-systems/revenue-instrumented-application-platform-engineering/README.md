@@ -1,4 +1,4 @@
-# Revenue-Instrumented Application Platform
+# Revenue-Instrumented Application Platform Engineering
 **Domain:** Application Platform & Revenue Operations
 
 ## System Architecture
@@ -14,33 +14,6 @@ This is not a tutorial repository. It is an architectural and execution record i
 
 ---
 
-## What This Proves
-
-This engineering system proves that:
-
-- **Secure payment processing** can be implemented with server-side validation, webhook signature verification, and fraud protection ([validation evidence](./validation.md#webhook-security))
-- **Privacy-compliant analytics** enable conversion optimization without collecting Personally Identifiable Information or payment data ([validation evidence](./validation.md#privacy-compliant-tracking))
-- **Rapid deployment** from design to production is achievable in under one hour using AI-assisted tooling and managed platforms ([validation evidence](./validation.md#vercel-deployment))
-- **Data-driven optimization** identifies checkout friction points and enables A/B testing for conversion improvement ([validation evidence](./validation.md#conversion-funnel))
-
-All claims are validated through structured testing documented in [`validation.md`](./validation.md).
-
----
-
-## Why It Matters
-
-Building revenue-instrumented application platforms without proper security, privacy, and operational controls introduces recurring business risks:
-
-- Payment data exposure from insecure handling or storage ([business context](./business-context.md#business-problem))
-- Revenue loss from payment manipulation or fraud ([architecture security model](./architecture.md#security-model))
-- Conversion rate degradation from poor user experience or performance ([business objectives](./business-context.md#business-objectives))
-- Privacy violations from collecting sensitive user data ([privacy compliance requirements](./business-context.md#non-functional-requirements))
-- Deployment delays from manual infrastructure management ([deployment speed goals](./business-context.md#success-criteria-measurable))
-
-This system addresses these risks through secure payment processing, privacy-first analytics, automated deployment, and conversion optimization capabilities. The business problem and requirements are detailed in [`business-context.md`](./business-context.md).
-
----
-
 ## Problem Framing
 
 Building revenue-instrumented application platforms requires integrating payment processing, analytics, and deployment workflows while maintaining security, privacy compliance, and operational efficiency. Poor implementation choices lead to payment fraud, privacy violations, conversion losses, or excessive operational burden.
@@ -51,8 +24,6 @@ This system addresses the measurable problem of:
 - Maintaining privacy compliance in analytics (target: no PII or payment data collected)
 - Optimizing conversion rates through data-driven insights (target: checkout funnel drop-off points identified)
 - Accelerating deployment from design to production (target: <1 hour deployment time)
-
-The complete problem statement, requirements, and constraints are documented in [`business-context.md`](./business-context.md).
 
 ---
 
@@ -108,7 +79,31 @@ The system is built incrementally, with validation at each stage:
 
 Execution steps and sequencing are documented in [`implementation.md`](./implementation.md).
 
-Validation is performed through explicit checks covering payment security, privacy compliance, conversion optimization, deployment speed, and operational security. Evidence and expected outcomes are documented in [`validation.md`](./validation.md).
+Validation is performed through explicit checks covering payment security, privacy compliance, conversion optimization, deployment speed, and operational security. Evidence and expected outcomes are documented in `validation.md`.
+
+---
+
+## Repository Structure
+
+This repository is intentionally structured to reflect how real systems are reviewed:
+
+- **Business Context**  
+  Problem statement, requirements, constraints  
+  → `business-context.md`
+
+- **Architecture**  
+  System design, tradeoffs, failure models  
+  → `architecture.md`
+
+- **Implementation**  
+  Execution phases and build decisions  
+  → `implementation.md`
+
+- **Validation**  
+  Test results and evidence of correctness  
+  → `validation.md`
+
+Each document stays within its scope. Redundancy is minimized by design.
 
 ---
 
@@ -121,30 +116,6 @@ Recommended reading order for reviewers:
 3. `architecture.md` – How the system is designed
 4. `implementation.md` – How the system was built
 5. `validation.md` – Proof the system behaves as intended
-
----
-
-## Repository Structure
-
-This repository is intentionally structured to reflect how real systems are reviewed:
-
-- **Business Context**  
-  Problem statement, requirements, constraints  
-  → [`business-context.md`](./business-context.md)
-
-- **Architecture**  
-  System design, tradeoffs, failure models  
-  → [`architecture.md`](./architecture.md)
-
-- **Implementation**  
-  Execution phases and build decisions  
-  → [`implementation.md`](./implementation.md)
-
-- **Validation**  
-  Test results and evidence of correctness  
-  → [`validation.md`](./validation.md)
-
-Each document stays within its scope. Redundancy is minimized by design.
 
 ---
 
@@ -163,22 +134,22 @@ This repository is written for:
 ## Scope and Non-Goals
 
 **In Scope**
-- Secure payment processing with Stripe ([implementation scope](./implementation.md#implementation-scope))
-- Privacy-first analytics with PostHog ([implementation scope](./implementation.md#implementation-scope))
-- AI-assisted landing page generation with v0.dev ([implementation scope](./implementation.md#implementation-scope))
-- Automated deployment to Vercel ([implementation scope](./implementation.md#implementation-scope))
-- Real user performance monitoring ([implementation scope](./implementation.md#implementation-scope))
-- Conversion funnel analysis ([implementation scope](./implementation.md#implementation-scope))
-- Webhook signature verification ([implementation scope](./implementation.md#implementation-scope))
+- Secure payment processing with Stripe
+- Privacy-first analytics with PostHog
+- AI-assisted landing page generation with v0.dev
+- Automated deployment to Vercel
+- Real user performance monitoring
+- Conversion funnel analysis
+- Webhook signature verification
 
 **Out of Scope**
-- Custom payment gateway development ([non-goals](./business-context.md#non-goals))
-- Advanced fraud detection beyond Stripe defaults ([non-goals](./business-context.md#non-goals))
-- Multi-currency or international payment processing ([non-goals](./business-context.md#non-goals))
-- Custom analytics platform development ([non-goals](./business-context.md#non-goals))
-- Advanced A/B testing beyond PostHog capabilities ([non-goals](./business-context.md#non-goals))
+- Custom payment gateway development
+- Advanced fraud detection beyond Stripe defaults
+- Multi-currency or international payment processing
+- Custom analytics platform development
+- Advanced A/B testing beyond PostHog capabilities
 
-These exclusions are deliberate and documented to preserve clarity and focus. Complete scope boundaries are defined in [`business-context.md`](./business-context.md#non-goals) and [`implementation.md`](./implementation.md#implementation-scope).
+These exclusions are deliberate and documented to preserve clarity and focus.
 
 ---
 
@@ -186,10 +157,10 @@ These exclusions are deliberate and documented to preserve clarity and focus. Co
 
 This engineering system operates within the following boundaries:
 
-- **Platform Constraints:** Vendor selection limited to approved platforms (Vercel, Stripe, PostHog) ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** Next.js application framework required, Vercel deployment platform required ([constraints](./business-context.md#constraints))
-- **Security Boundaries:** Payment data must never be stored, analytics must exclude PII, webhook events must be verified ([security model](./architecture.md#security-model))
-- **Cost Boundaries:** Development environment costs <$50/month, production costs scale with transaction volume ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Vendor selection limited to approved platforms (Vercel, Stripe, PostHog); no custom payment gateway development; security scanning required ([constraints](./business-context.md#constraints))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing systems; budget constraints ([constraints](./business-context.md#constraints))
+- **Technical Constraints:** Next.js application framework required; Vercel deployment platform required; single region deployment ([constraints](./architecture.md#constraints))
+- **Cost Boundaries:** Development environment costs <$50/month; production costs scale with transaction volume ([cost model](./architecture.md#cost-model))
 
 Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
 

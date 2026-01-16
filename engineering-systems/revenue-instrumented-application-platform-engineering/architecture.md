@@ -1,4 +1,4 @@
-# Architecture: Revenue-Instrumented Application Platform
+# Architecture: Revenue-Instrumented Application Platform Engineering
 
 ## Quick Orientation
 
