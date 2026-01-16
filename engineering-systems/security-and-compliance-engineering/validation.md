@@ -88,6 +88,18 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| IAM Least Privilege | `./executions/01-iam-least-privilege.md` | IAM least-privilege enforcement |
+| Secrets Management | `./executions/02-secrets-management.md` | Secure credential storage and rotation |
+| Boundary Enforcement | `./executions/03-boundary-enforcement.md` | Encryption boundaries and key management |
+| Compliance Checklist | `./executions/04-compliance-checklist.md` | Security monitoring and compliance validation |
+| Evidence Collection | `./executions/05-evidence-collection.md` | Threat detection and audit evidence |
+
+---
+
 ## Known Limitations
 
 - Validation performed in non-production environment

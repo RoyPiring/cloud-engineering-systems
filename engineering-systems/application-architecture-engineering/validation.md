@@ -165,6 +165,23 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| Serverless Function Execution | `./executions/01-serverless-foundation-lambda.md` | Lambda function creation and execution |
+| IAM Permissions | `./executions/01-serverless-foundation-lambda.md` | IAM role configuration |
+| API Gateway Integration | `./executions/02-api-layer-gateway-lambda.md` | API Gateway endpoint creation |
+| Three-Tier Application | `./executions/03-complete-three-tier-application.md` | Complete application deployment |
+| Container Deployment | `./executions/04-container-deployment-elastic-beanstalk.md` | Elastic Beanstalk deployment |
+| Container Registry | `./executions/05-container-registry-ecr.md` | ECR image management |
+| Kubernetes Cluster | `./executions/06-kubernetes-cluster-eks-part1.md` | EKS cluster creation |
+| Kubernetes Deployment | `./executions/07-kubernetes-deployment-eks-part2.md` | Application deployment to K8s |
+| Kubernetes Scaling | `./executions/08-kubernetes-scaling-eks-part3.md` | Scaling patterns |
+| Kubernetes Advanced | `./executions/09-kubernetes-advanced-eks-part4.md` | Advanced Kubernetes patterns |
+
+---
+
 ## Known Limitations
 
 - Validation performed in non-production environments

@@ -189,6 +189,26 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| Cursor IDE Setup | `./executions/01-ai-workspace-cursor.md` | Cursor IDE setup and configuration |
+| Codebase Exploration | `./executions/01-ai-workspace-cursor.md` | Codebase inspection and exploration |
+| Feature Creation | `./executions/01-ai-workspace-cursor.md` | Feature implementation |
+| Commands Usage | `./executions/01-ai-workspace-cursor.md` | Command usage and documentation |
+| Rules Configuration | `./executions/01-ai-workspace-cursor.md` | Rules configuration |
+| Context Management | `./executions/01-ai-workspace-cursor.md` | Context management |
+| Claude Code Setup | `./executions/02-ai-workspace-claude-code.md` | Claude Code setup and configuration |
+| Cost Management | `./executions/02-ai-workspace-claude-code.md` | Cost management |
+| Plan Mode | `./executions/02-ai-workspace-claude-code.md` | Plan mode usage |
+| Feature Implementation | `./executions/02-ai-workspace-claude-code.md` | Feature implementation |
+| MCP Connection | `./executions/03-ai-workspace-mcp.md` | MCP connection setup |
+| Database Operations | `./executions/03-ai-workspace-mcp.md` | Database operations via MCP |
+| Natural Language Querying | `./executions/03-ai-workspace-mcp.md` | Natural language querying |
+
+---
+
 ## Known Limitations
 
 - Validation performed in local development environment

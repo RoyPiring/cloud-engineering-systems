@@ -1,12 +1,3 @@
-# Changelog
-
-All notable changes to this repository will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [Unreleased]
-
 ## [2026-01-14]
 
 ### Added
@@ -45,14 +36,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added "Evidence Map to Executions" section to `rag-knowledge-service-delivery-assurance-engineering/validation.md`
 - Standardized evidence references to use full paths (`./executions/...`) in validation documentation
 - Added execution path link in `rag-knowledge-service-delivery-assurance-engineering/README.md`
-
----
-
-## Types of Changes
-
-- **Added** - New features, engineering systems, or capabilities
-- **Changed** - Changes to existing functionality or documentation structure
-- **Deprecated** - Features or systems that will be removed in future releases
-- **Removed** - Removed features or systems
-- **Fixed** - Bug fixes, documentation corrections, or consistency improvements
-- **Security** - Security-related changes or vulnerability fixes

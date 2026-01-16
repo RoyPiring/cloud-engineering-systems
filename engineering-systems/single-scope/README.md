@@ -149,6 +149,19 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 ---
 
+## Boundaries
+
+This engineering system operates within the following boundaries:
+
+- **Policy Constraints:** Lab scope limited to single tools or concepts; no full system implementations; standalone execution required ([constraints](./business-context.md#constraints))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing workflows; budget constraints ([constraints](./business-context.md#constraints))
+- **Technical Constraints:** Lab independence required; resource isolation per lab; completion time <2 hours per lab ([constraints](./architecture.md#constraints))
+- **Cost Boundaries:** Lab costs <$10/month per lab; free-tier services preferred ([cost model](./architecture.md#cost-model))
+
+Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+
+---
+
 ## Summary
 
 This repository represents a complete single-scope lab lifecycle: from problem framing, through design and execution, to validation.

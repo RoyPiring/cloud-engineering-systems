@@ -92,6 +92,16 @@ Validation covers:
 
 ---
 
+## Evidence Map to Executions
+
+| Validation Check | Execution File | Section Reference |
+|-----------------|----------------|-------------------|
+| Standalone Lab Execution | Various execution files in `./executions/` | Self-contained lab implementations |
+| Prerequisite Setup | `./executions/prerequisites/` | Prerequisite setup guides |
+| Tool-Specific Labs | `./executions/ai-ml-tools/`, `./executions/storage/` | Tool-specific implementations |
+
+---
+
 ## Known Limitations
 
 - Validation performed in non-production environment

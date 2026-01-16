@@ -154,6 +154,19 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 ---
 
+## Boundaries
+
+This engineering system operates within the following boundaries:
+
+- **Policy Constraints:** Security tool selection limited to approved vendors; no custom security tooling development; compliance requirements ([constraints](./business-context.md#constraints))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing systems; budget constraints ([constraints](./business-context.md#constraints))
+- **Technical Constraints:** AWS-native security services required; single region deployment; encryption requirements ([constraints](./architecture.md#constraints))
+- **Cost Boundaries:** Security infrastructure costs <$30/month for lab environment; production costs scale with usage ([cost model](./architecture.md#cost-model))
+
+Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+
+---
+
 ## Summary
 
 This repository represents a complete security system lifecycle: from problem framing, through design and execution, to validation.

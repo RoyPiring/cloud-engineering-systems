@@ -155,6 +155,19 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 ---
 
+## Boundaries
+
+This engineering system operates within the following boundaries:
+
+- **Policy Constraints:** IaC tool selection limited to approved tools; security scanning required; no custom CI/CD engine development ([constraints](./business-context.md#constraints))
+- **Organizational Constraints:** Team adoption and learning curve; integration with existing tools; budget constraints ([constraints](./business-context.md#constraints))
+- **Technical Constraints:** AWS-native services required; single region deployment; CloudFormation-based infrastructure ([constraints](./architecture.md#constraints))
+- **Cost Boundaries:** CI/CD infrastructure costs constrained to defined monthly ceiling ([cost model](./architecture.md#cost-model))
+
+Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+
+---
+
 ## Summary
 
 This repository represents a complete CI/CD system lifecycle: from problem framing, through design and execution, to validation.

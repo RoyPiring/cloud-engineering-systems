@@ -158,14 +158,12 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Executions
+## Execution Path (Start to Finish)
 
-The `executions/` directory contains detailed guides for specific data engineering implementations:
-
-1. **[Data Engineering Foundation](./executions/01-data-engineering-foundation.md)** - Database setup and MCP configuration
-2. **[Data Engineering Advanced](./executions/02-data-engineering-advanced.md)** - ETL/ELT pipeline implementation
-3. **[Data Engineering Optimization](./executions/03-data-engineering-optimization.md)** - Query optimization and indexing
-4. **[Data Engineering Production](./executions/04-data-engineering-production.md)** - Production patterns and monitoring
+1. **[01-data-engineering-foundation.md](./executions/01-data-engineering-foundation.md)**: Database setup and MCP configuration
+2. **[02-data-engineering-advanced.md](./executions/02-data-engineering-advanced.md)**: ETL/ELT pipeline implementation
+3. **[03-data-engineering-optimization.md](./executions/03-data-engineering-optimization.md)**: Query optimization and indexing
+4. **[04-data-engineering-production.md](./executions/04-data-engineering-production.md)**: Production patterns and monitoring
 
 ---
 

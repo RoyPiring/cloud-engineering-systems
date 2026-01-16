@@ -153,14 +153,12 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Executions
+## Execution Path (Start to Finish)
 
-The `executions/` directory contains detailed guides for specific RAG implementations:
-
-1. **[RAG Foundation Bedrock](./executions/01-rag-foundation-bedrock.md)** - Knowledge base setup and configuration
-2. **[RAG CloudShell Implementation](./executions/02-rag-cloudshell-implementation.md)** - Local development and testing
-3. **[RAG API Integration](./executions/03-rag-api-integration.md)** - API design and Bedrock integration
-4. **[RAG Complete Webapp](./executions/04-rag-complete-webapp.md)** - Full-stack RAG application
+1. **[01-rag-foundation-bedrock.md](./executions/01-rag-foundation-bedrock.md)**: Knowledge base setup and configuration
+2. **[02-rag-cloudshell-implementation.md](./executions/02-rag-cloudshell-implementation.md)**: Local development and testing
+3. **[03-rag-api-integration.md](./executions/03-rag-api-integration.md)**: API design and Bedrock integration
+4. **[04-rag-complete-webapp.md](./executions/04-rag-complete-webapp.md)**: Full-stack RAG application
 
 ---
 
