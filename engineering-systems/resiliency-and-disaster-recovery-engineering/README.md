@@ -2,7 +2,8 @@
 **Domain:** Cloud Resilience & Availability Engineering
 
 ## System Architecture
-<img width="2752" height="1536" alt="resiliency-and-disaster-recovery-engineering-architecture" src="https://github.com/user-attachments/assets/placeholder" />
+<img width="2375" height="1297" alt="image" src="https://github.com/user-attachments/assets/dd525f3c-bea5-43e7-9e89-2ac8386d366f" />
+
 
 ## Executive Summary
 
