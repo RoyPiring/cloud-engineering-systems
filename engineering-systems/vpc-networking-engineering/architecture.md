@@ -102,82 +102,6 @@ Source → Security Group (Allow) → Network ACL (Allow) → Route Table → De
 
 ---
 
-## Logical Architecture Overview
-
-### VPC Boundary
-- Single AWS VPC
-- Custom CIDR block sized for growth
-- Regional construct spanning multiple Availability Zones
-
-### Subnet Tiers
-
-- **Public Subnets**
-  - Direct internet access via Internet Gateway
-  - Limited to ingress-controlled resources only
-
-- **Private Subnets**
-  - No direct inbound internet access
-  - Outbound access via NAT Gateway only
-
-- **Isolated Subnets**
-  - No internet ingress or egress
-  - AWS service access only through VPC Endpoints
-
-Subnet tiering enforces blast-radius reduction and traffic intent.
-
----
-
-## Core Components and Responsibilities
-
-### Internet Gateway
-- Single IGW per VPC
-- Terminates public internet traffic
-- Attached only to public subnet route tables
-
-### NAT Gateway
-- Enables outbound internet access for private subnets
-- Deployed per AZ to avoid single-AZ failure
-- Treated as a controlled cost center
-
-### Route Tables
-- Explicit routing per subnet tier
-- No shared “catch-all” routing tables
-- All routes reviewed as part of change control
-
-### Security Groups
-- Primary network security enforcement
-- Stateful, instance-level controls
-- Default deny posture with explicit allow rules
-
-### Network ACLs
-- Secondary, stateless controls
-- Used to enforce coarse-grained subnet policies
-- Not used for application-level filtering
-
-### VPC Endpoints
-- Gateway Endpoints for high-volume AWS services
-- Interface Endpoints used selectively
-- Eliminate unnecessary internet traversal
-
-### Observability
-- VPC Flow Logs enabled for all subnets
-- CloudTrail records all network-related API changes
-- Logs treated as authoritative evidence
-
----
-
-## Security Model
-
-**Trust Boundaries:** Internet boundary (untrusted external traffic); VPC boundary (trusted internal traffic); subnet boundary (segmentation by exposure); security group boundary (workload-specific access); VPC endpoint boundary (private AWS service access)
-
-**IAM Model:** Least-privilege IAM roles for network resource management; no cross-account VPC access without explicit peering; security group rules scoped to specific source/destination; VPC endpoint policies restrict service access
-
-**Encryption:** TLS 1.2+ for all internet-facing traffic; VPC endpoints use AWS private network (no internet traversal); no unencrypted data transfer across untrusted networks; CloudTrail logs encrypted at rest
-
-**Audit Trail:** VPC Flow Logs capture all network traffic (30-day retention); CloudTrail records all network-related API changes; security group changes logged and reviewed; route table changes tracked in change control; cost anomalies flag potential security misconfigurations
-
----
-
 ## Failure Model
 
 **What fails:** Route table misconfiguration, security group errors, NAT Gateway failures, VPC Endpoint misconfigurations, CIDR exhaustion, internet gateway attachment failures
@@ -190,15 +114,15 @@ Subnet tiering enforces blast-radius reduction and traffic intent.
 
 ---
 
-## Scalability Considerations
+## Security Model
 
-- CIDR blocks sized for 10x growth
-- Subnets sized to avoid early IP exhaustion
-- Routing tables designed below AWS limits
-- Architecture supports transition to Transit Gateway
-- No assumptions about static workload count
+**Trust Boundaries:** Internet boundary (untrusted external traffic); VPC boundary (trusted internal traffic); subnet boundary (segmentation by exposure); security group boundary (workload-specific access); VPC endpoint boundary (private AWS service access)
 
-Scalability is architectural, not reactive.
+**IAM Model:** Least-privilege IAM roles for network resource management; no cross-account VPC access without explicit peering; security group rules scoped to specific source/destination; VPC endpoint policies restrict service access
+
+**Encryption:** TLS 1.2+ for all internet-facing traffic; VPC endpoints use AWS private network (no internet traversal); no unencrypted data transfer across untrusted networks; CloudTrail logs encrypted at rest
+
+**Audit Trail:** VPC Flow Logs capture all network traffic (30-day retention); CloudTrail records all network-related API changes; security group changes logged and reviewed; route table changes tracked in change control; cost anomalies flag potential security misconfigurations
 
 ---
 
@@ -235,37 +159,6 @@ Scalability is architectural, not reactive.
 4. **Cost Efficiency** - How judged: Network costs constrained to <$60/month for lab; Gateway endpoints preferred over interface endpoints; NAT usage optimized through subnet design; cost per GB data transfer tracked
 
 5. **Operational Simplicity** - How judged: Network topology clear and reviewable; troubleshooting time <30 minutes for common issues; Flow Logs provide traffic visibility; route table changes validated before deployment
-
----
-
-## Architectural Tradeoffs Summary
-
-- Managed services chosen over self-managed where reliability matters
-- Cost accepted where it reduces operational risk
-- Complexity deferred until justified by scale
-- Security prioritized over convenience
-
-No decision is accidental.
-
----
-
-## Relationship to Other Documents
-
-- **Business Drivers:** `business-context.md`
-- **Execution Details:** `implementation.md`
-- **Proof and Evidence:** `validation.md`
-
-This document defines *how the system is structured and why*.
-
----
-
-## Architectural Summary
-
-This architecture provides a **deliberate, secure, and scalable networking foundation** that balances speed, safety, cost, and operability.
-
-It is designed to survive growth, audits, failures, and human error without requiring fundamental redesign.
-
-That is the measure of a sound network architecture.
 
 ---
 

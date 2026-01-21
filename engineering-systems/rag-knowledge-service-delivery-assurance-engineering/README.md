@@ -157,12 +157,12 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 This engineering system operates within the following boundaries:
 
-- **Policy Constraints:** Service delivery approach based on requirements; no custom orchestration tooling; managed services preferred ([constraints](./business-context.md#constraints))
-- **Organizational Constraints:** Team expertise and learning curve; integration with existing workflows; budget constraints ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** AWS-native services required; single region deployment; container orchestration requirements ([constraints](./architecture.md#constraints))
-- **Cost Boundaries:** Service delivery infrastructure costs <$50/month for lab environment; production costs scale with usage ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Service delivery approach based on requirements; no custom orchestration tooling; managed services preferred ([constraints](./business-context.md))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing workflows; budget constraints ([constraints](./business-context.md))
+- **Technical Constraints:** AWS-native services required; single region deployment; container orchestration requirements ([constraints](./architecture.md))
+- **Cost Boundaries:** Service delivery infrastructure costs <$50/month for lab environment; production costs scale with usage ([cost model](./architecture.md))
 
-Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+Complete constraint definitions are documented in `business-context.md` and `architecture.md`.
 
 ---
 

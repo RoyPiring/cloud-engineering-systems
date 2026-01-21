@@ -169,22 +169,6 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Executions
-
-The `executions/` directory contains detailed guides for specific automation implementations:
-
-1. **[CI/CD Introduction](./executions/01-cicd-introduction.md)** - DevOps principles and CI/CD concepts
-2. **[Source Control GitHub](./executions/02-source-control-github.md)** - GitHub integration and webhook configuration
-3. **[Environment Bootstrap](./executions/03-environment-bootstrap.md)** - Development environment setup
-4. **[Infrastructure CloudFormation](./executions/04-infrastructure-cloudformation.md)** - AWS-native infrastructure automation
-5. **[Build Automation CodeBuild](./executions/05-build-automation-codebuild.md)** - Automated build and test execution
-6. **[Package Management CodeArtifact](./executions/06-package-management-codeartifact.md)** - Dependency and artifact management
-7. **[Idempotent Provisioning](./executions/07-idempotent-provisioning.md)** - Infrastructure as Code with idempotency
-8. **[Guardrail Enforcement](./executions/08-guardrail-enforcement.md)** - Security and compliance policy gates
-9. **[Rollback Procedure](./executions/09-rollback-procedure.md)** - Automated rollback on deployment failure
-
----
-
 ## Key Implementation Decisions
 
 ### Decision 1: IaC Tool Selection

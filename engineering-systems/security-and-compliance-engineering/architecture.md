@@ -91,22 +91,12 @@ Identity (IAM) → Network (VPC/SG) → Data (Encryption) → Application (Contr
 CloudTrail Events → GuardDuty Analysis → Security Findings → CloudWatch Alarms → Incident Response
 ```
 
-## Security Architecture
+## Design Decisions
 
-### Defense-in-Depth Layers
-
-1. **Identity Layer:** IAM policies and roles
-2. **Network Layer:** Security groups, NACLs, VPC endpoints
-3. **Data Layer:** Encryption at rest and in transit
-4. **Application Layer:** Application-level security controls
-5. **Monitoring Layer:** Threat detection and security monitoring
-
-## Integration Points
-
-- **All AWS Services:** IAM integration
-- **Applications:** Secrets Manager, KMS integration
-- **Networking:** VPC security groups, NACLs
-- **Monitoring:** CloudWatch, CloudTrail, GuardDuty
+- IAM policy design and least-privilege enforcement
+- Secrets management strategy (Secrets Manager vs. Parameter Store)
+- Encryption key management approach
+- Threat detection and monitoring strategy
 
 ---
 

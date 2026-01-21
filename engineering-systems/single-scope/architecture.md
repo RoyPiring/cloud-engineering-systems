@@ -21,46 +21,27 @@
 
 ---
 
-## Overview
+## System Design
 
-Single-scope engineering consists of standalone labs organized by category. Each lab is self-contained and focuses on a specific tool, service, or concept without requiring progression through a series.
+This system covers standalone labs organized by category, with self-contained execution guides for specific tools, services, or concepts.
 
-## Architecture Components
+## Core Components
 
-### Lab Organization
+### 1. Lab Organization
+- Prerequisites (AWS account setup, beginner challenges)
+- AI/ML Tools (AI agents, LLM integrations, prompt engineering, AWS AI services)
+- Storage (S3 static website hosting, multi-cloud storage patterns)
 
-Labs are organized into categories:
+### 2. Lab Structure
+- Self-contained documentation
+- Independent execution
+- Clear scope and objectives
+- Validation and cleanup procedures
 
-1. **Prerequisites**
-   - AWS account setup
-   - Beginner challenges
-
-2. **AI/ML Tools**
-   - AI agents (no-code, web UI)
-   - LLM integrations
-   - Prompt engineering
-   - AWS AI services
-
-3. **Storage**
-   - S3 static website hosting
-   - Multi-cloud storage patterns
-
-## Component Relationships
-
-```
-Single-Scope Engineering
-├── Prerequisites
-│   ├── AWS Account Setup
-│   └── AWS Beginners Challenge
-├── AI/ML Tools
-│   ├── AI Agent Implementations
-│   ├── LLM Integrations
-│   ├── Prompt Engineering
-│   └── AWS AI Services
-└── Storage
-    ├── S3 Hosting
-    └── Multi-Cloud Patterns
-```
+### 3. Integration Support
+- Prerequisite integration for engineering systems
+- Quick reference patterns
+- Category-based organization
 
 ## Architecture Patterns
 
@@ -85,43 +66,13 @@ Documentation → Lab Reference → Tool/Pattern Lookup → Implementation
 Category (Prerequisites/AI/Storage) → Lab → Tool/Service/Concept
 ```
 
-## Integration Patterns
+## Design Decisions
 
-### Standalone Execution
-- Each lab can be completed independently
-- No dependencies between labs
-- Self-contained documentation
-
-### Prerequisite Integration
-- Labs can be used as prerequisites for engineering systems
-- Referenced from domain READMEs
-- Integrated into domain execution paths
-
-### Quick Reference
-- Labs serve as quick guides
-- Referenced from other documentation
-- Used for specific tool or pattern lookup
-
-## Design Principles
-
-1. **Single Focus:** Each lab addresses one tool, service, or concept
-2. **Self-Contained:** All information needed in the lab itself
-3. **Clear Scope:** Explicit boundaries and non-goals
-4. **Quick Completion:** Designed for focused, time-boxed execution
-5. **Reusability:** Can be referenced and integrated elsewhere
-
-## Technology Stack
-
-- **AWS Services:** Account setup, S3, AI services
-- **AI Tools:** Agents, LLMs, prompt engineering
-- **Storage:** S3, multi-cloud patterns
-- **Documentation:** Markdown, execution guides
-
-## Scalability
-
-- New labs can be added without affecting existing labs
-- Categories can be expanded as needed
-- Integration points remain consistent
+- Lab organization strategy (category-based for discoverability)
+- Self-contained design (independence vs. efficiency tradeoff)
+- Integration approach (standalone execution vs. prerequisite integration)
+- Documentation style (quick reference vs. comprehensive guides)
+- Scope boundaries (single tool/concept focus)
 
 ---
 

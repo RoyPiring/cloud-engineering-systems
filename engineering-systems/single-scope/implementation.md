@@ -153,47 +153,15 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Lab Categories
+## Execution Path (Start to Finish)
 
-### Prerequisites
-
-**AWS Account Setup**
-- Account creation and configuration
-- IAM basics
-- Billing setup
-- Security best practices
-
-**AWS Beginners Challenge**
-- Beginner-friendly exercises
-- Core AWS concepts
-- Hands-on practice
-
-### AI/ML Tools
-
-**AI Agent Implementations**
-- No-code agent setup
-- Web UI configuration
-- Integration patterns
-
-**LLM Integrations**
-- DeepSeek LLM integration
-- Prompt engineering techniques
-- Model configuration
-
-**AI Services**
-- Amazon Transcribe implementation
-- Service integration patterns
-
-### Storage
-
-**S3 Website Hosting**
-- Static website hosting
-- CloudFront integration
-- Cost optimization
-
-**Multi-Cloud Storage**
-- Multi-cloud storage patterns
-- Integration strategies
+1. **[AWS Account Setup](./executions/prerequisites/aws-account-setup.md)**: AWS account creation and configuration
+2. **[AWS Beginners Challenge](./executions/prerequisites/aws-beginners-challenge.md)**: Beginner-friendly AWS exercises
+3. **[AI Agent Implementations](./executions/ai-ml-tools/ai-agent-nocode.md)**: No-code AI agent setup
+4. **[LLM Integrations](./executions/ai-ml-tools/ai-llm-deepseek.md)**: DeepSeek LLM integration and prompt engineering
+5. **[AI Services](./executions/ai-ml-tools/aws-ai-transcribe.md)**: Amazon Transcribe implementation
+6. **[S3 Website Hosting](./executions/storage/aws-host-a-website-on-s3.md)**: Static website hosting with CloudFront
+7. **[Multi-Cloud Storage](./executions/storage/aws-multicloud-storage.md)**: Multi-cloud storage patterns
 
 ---
 
@@ -242,14 +210,6 @@ This sequencing is deliberate and designed to surface errors early.
 ### Scenario 5: Integration Failure
 **Symptom:** Lab cannot be integrated into larger project
 **Response:** Review integration patterns, document examples, validate integration
-
----
-
-## Execution Path (Start to Finish)
-
-The `executions/` directory contains standalone labs and prerequisite content organized by domain. Each execution is self-contained and can be completed independently.
-
-See the [executions directory](./executions/) for the complete list of available labs organized by category.
 
 ---
 

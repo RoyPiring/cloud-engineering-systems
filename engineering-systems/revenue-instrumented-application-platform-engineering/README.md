@@ -157,12 +157,12 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 This engineering system operates within the following boundaries:
 
-- **Policy Constraints:** Vendor selection limited to approved platforms (Vercel, Stripe, PostHog); no custom payment gateway development; security scanning required ([constraints](./business-context.md#constraints))
-- **Organizational Constraints:** Team expertise and learning curve; integration with existing systems; budget constraints ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** Next.js application framework required; Vercel deployment platform required; single region deployment ([constraints](./architecture.md#constraints))
-- **Cost Boundaries:** Development environment costs <$50/month; production costs scale with transaction volume ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Vendor selection limited to approved platforms (Vercel, Stripe, PostHog); no custom payment gateway development; security scanning required ([constraints](./business-context.md))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing systems; budget constraints ([constraints](./business-context.md))
+- **Technical Constraints:** Next.js application framework required; Vercel deployment platform required; single region deployment ([constraints](./architecture.md))
+- **Cost Boundaries:** Development environment costs <$50/month; production costs scale with transaction volume ([cost model](./architecture.md))
 
-Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+Complete constraint definitions are documented in `business-context.md` and `architecture.md`.
 
 ---
 

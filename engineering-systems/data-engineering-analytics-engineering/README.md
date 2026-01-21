@@ -157,12 +157,12 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 This engineering system operates within the following boundaries:
 
-- **Policy Constraints:** Data pipeline pattern selection based on workload; no custom analytics engine development; managed services preferred ([constraints](./business-context.md#constraints))
-- **Organizational Constraints:** Team expertise and learning curve; integration with existing systems; budget constraints ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** AWS-native analytics services required; single region deployment; batch processing focus ([constraints](./architecture.md#constraints))
-- **Cost Boundaries:** Data engineering costs <$40/month for lab environment; production costs scale with data volume ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Data pipeline pattern selection based on workload; no custom analytics engine development; managed services preferred ([constraints](./business-context.md))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing systems; budget constraints ([constraints](./business-context.md))
+- **Technical Constraints:** AWS-native analytics services required; single region deployment; batch processing focus ([constraints](./architecture.md))
+- **Cost Boundaries:** Data engineering costs <$40/month for lab environment; production costs scale with data volume ([cost model](./architecture.md))
 
-Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+Complete constraint definitions are documented in `business-context.md` and `architecture.md`.
 
 ---
 

@@ -156,12 +156,12 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 This engineering system operates within the following boundaries:
 
-- **Policy Constraints:** Database selection based on workload characteristics; no custom database engine development; managed services preferred ([constraints](./business-context.md#constraints))
-- **Organizational Constraints:** Team expertise and learning curve; integration with existing applications; budget constraints ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** AWS-native database services required; single region deployment; high availability requirements ([constraints](./architecture.md#constraints))
-- **Cost Boundaries:** Database costs <$50/month for lab environment; production costs scale with usage ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Database selection based on workload characteristics; no custom database engine development; managed services preferred ([constraints](./business-context.md))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing applications; budget constraints ([constraints](./business-context.md))
+- **Technical Constraints:** AWS-native database services required; single region deployment; high availability requirements ([constraints](./architecture.md))
+- **Cost Boundaries:** Database costs <$50/month for lab environment; production costs scale with usage ([cost model](./architecture.md))
 
-Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+Complete constraint definitions are documented in `business-context.md` and `architecture.md`.
 
 ---
 
