@@ -164,7 +164,23 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Implementation-Level Decisions
+## Execution Path (Start to Finish)
+
+1. **[01-networking-introduction.md](./executions/01-networking-introduction.md)**: Networking introduction and VPC foundation
+2. **[02-subnet-segmentation.md](./executions/02-subnet-segmentation.md)**: Subnet segmentation and tiering
+3. **[03-routing-boundaries.md](./executions/03-routing-boundaries.md)**: Routing boundaries and connectivity
+4. **[04-network-security-groups.md](./executions/04-network-security-groups.md)**: Network security groups and controls
+5. **[05-vpc-endpoints.md](./executions/05-vpc-endpoints.md)**: VPC endpoints for private service access
+6. **[06-s3-networking.md](./executions/06-s3-networking.md)**: S3 networking and integration
+7. **[07-ec2-networking.md](./executions/07-ec2-networking.md)**: EC2 networking behavior
+8. **[08-vpc-peering-advanced.md](./executions/08-vpc-peering-advanced.md)**: VPC peering and multi-VPC connectivity
+9. **[09-cloudfront-integration.md](./executions/09-cloudfront-integration.md)**: CloudFront integration
+10. **[10-isolated-network-test.md](./executions/10-isolated-network-test.md)**: Isolated network test and validation
+11. **[11-flow-logs-validation.md](./executions/11-flow-logs-validation.md)**: Flow logs validation and observability
+
+---
+
+## Key Implementation Decisions
 
 ### CIDR Allocation
 - /16 selected for VPC to support growth
@@ -184,29 +200,6 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Validation Hooks
-
-Each phase includes explicit validation hooks:
-
-- Connectivity tests for routing correctness
-- Security tests for boundary enforcement
-- Log verification for observability
-- Cost checks for budget adherence
-
-Validation evidence is documented separately in `validation.md`.
-
----
-
-## Change Management
-
-- Route table and security changes are reviewed prior to application
-- Changes are applied incrementally
-- Rollback paths are defined for each phase
-
-Unvalidated changes are treated as defects.
-
----
-
 ## Common Failure Scenarios and Responses
 
 | Scenario | Likely Cause | Response |
@@ -220,37 +213,16 @@ Failures are expected and planned for.
 
 ---
 
-## Execution Path (Start to Finish)
+## Validation Hooks
 
-1. **[01-networking-introduction.md](./executions/01-networking-introduction.md)**: Networking introduction and VPC foundation
-2. **[02-subnet-segmentation.md](./executions/02-subnet-segmentation.md)**: Subnet segmentation and tiering
-3. **[03-routing-boundaries.md](./executions/03-routing-boundaries.md)**: Routing boundaries and connectivity
-4. **[04-network-security-groups.md](./executions/04-network-security-groups.md)**: Network security groups and controls
-5. **[05-vpc-endpoints.md](./executions/05-vpc-endpoints.md)**: VPC endpoints for private service access
-6. **[06-s3-networking.md](./executions/06-s3-networking.md)**: S3 networking and integration
-7. **[07-ec2-networking.md](./executions/07-ec2-networking.md)**: EC2 networking behavior
-8. **[08-vpc-peering-advanced.md](./executions/08-vpc-peering-advanced.md)**: VPC peering and multi-VPC connectivity
-9. **[09-cloudfront-integration.md](./executions/09-cloudfront-integration.md)**: CloudFront integration
-10. **[10-isolated-network-test.md](./executions/10-isolated-network-test.md)**: Isolated network test and validation
-11. **[11-flow-logs-validation.md](./executions/11-flow-logs-validation.md)**: Flow logs validation and observability
+Each phase includes explicit validation hooks:
 
----
+- Connectivity tests for routing correctness
+- Security tests for boundary enforcement
+- Log verification for observability
+- Cost checks for budget adherence
 
-## Execution Summary
-
-This implementation translates architectural intent into a working system through controlled sequencing, explicit guardrails, and continuous validation.
-
-The result is a secure, scalable, and observable network foundation that can be extended without rework.
-
----
-
-## Relationship to Other Documents
-
-- **Business Drivers:** `business-context.md`
-- **Architecture and Tradeoffs:** `architecture.md`
-- **Validation and Evidence:** `validation.md`
-
-This document defines *how the system was built* and *how correctness was enforced during execution*.
+Validation evidence is documented separately in `validation.md`.
 
 ---
 

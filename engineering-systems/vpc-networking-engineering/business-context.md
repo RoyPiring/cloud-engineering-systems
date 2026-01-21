@@ -156,6 +156,21 @@ The system operates under the following constraints:
 
 ---
 
+## Non-Goals
+
+The following are explicitly out of scope:
+
+- Multi-region or global networking
+- Hybrid connectivity (VPN or Direct Connect)
+- Advanced routing protocols (BGP, OSPF)
+- Custom DNS architectures
+- Application-layer security controls
+- Large-scale automation platforms
+
+These exclusions are deliberate and documented to preserve clarity and focus on core VPC networking capabilities.
+
+---
+
 ## Navigation
 
 | Previous | Next |

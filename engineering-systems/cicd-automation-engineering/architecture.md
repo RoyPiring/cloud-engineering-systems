@@ -82,43 +82,13 @@ Dev → Test → Staging → Production
 (Each stage with validation and approval gates)
 ```
 
-## Integration Points
+## Design Decisions
 
-- **Source Control:** GitHub, CodeCommit, GitLab
-- **Build Services:** CodeBuild, Jenkins, GitHub Actions
-- **Deployment Targets:** EC2, ECS, EKS, Lambda, Elastic Beanstalk
-- **Monitoring:** CloudWatch, X-Ray, third-party tools
-- **Security:** IAM, Secrets Manager, GuardDuty, security scanning tools
-
-## Security Architecture
-
-### Security Layers
-
-1. **Source Control:** Branch protection, code review requirements
-2. **Build:** Secret management, least-privilege IAM roles
-3. **Deploy:** Infrastructure validation, security scanning
-4. **Runtime:** Application security, monitoring, incident response
-
-### Security Controls
-
-- **IAM Roles:** Least-privilege access for pipeline components
-- **Secrets Management:** Secure credential storage and rotation
-- **Security Scanning:** Automated vulnerability and compliance checks
-- **Audit Logging:** Complete pipeline execution audit trail
-
-## Scalability Considerations
-
-- **Parallel Execution:** Run tests and builds in parallel
-- **Build Caching:** Reduce build times through intelligent caching
-- **Resource Right-Sizing:** Optimize build and deployment resource allocation
-- **Pipeline Optimization:** Minimize pipeline execution time
-
-## Cost Optimization
-
-- **Build Resources:** Right-size CodeBuild compute resources
-- **Artifact Storage:** Lifecycle policies for artifact retention
-- **Pipeline Execution:** Minimize unnecessary pipeline runs
-- **Infrastructure:** Use spot instances for non-critical builds where appropriate
+- Pipeline orchestration strategy (CodePipeline for AWS-native integration)
+- Build service selection (CodeBuild for managed builds)
+- Artifact management approach (CodeArtifact for package management)
+- Security scanning and policy enforcement strategy
+- Rollback and recovery procedures
 
 ---
 

@@ -158,12 +158,12 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 This engineering system operates within the following boundaries:
 
-- **Policy Constraints:** Security tool selection limited to approved vendors; no custom security tooling development; compliance requirements ([constraints](./business-context.md#constraints))
-- **Organizational Constraints:** Team expertise and learning curve; integration with existing systems; budget constraints ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** AWS-native security services required; single region deployment; encryption requirements ([constraints](./architecture.md#constraints))
-- **Cost Boundaries:** Security infrastructure costs <$30/month for lab environment; production costs scale with usage ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Security tool selection limited to approved vendors; no custom security tooling development; compliance requirements ([constraints](./business-context.md))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing systems; budget constraints ([constraints](./business-context.md))
+- **Technical Constraints:** AWS-native security services required; single region deployment; encryption requirements ([constraints](./architecture.md))
+- **Cost Boundaries:** Security infrastructure costs <$30/month for lab environment; production costs scale with usage ([cost model](./architecture.md))
 
-Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+Complete constraint definitions are documented in `business-context.md` and `architecture.md`.
 
 ---
 

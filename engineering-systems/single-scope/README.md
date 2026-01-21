@@ -1,6 +1,9 @@
 # Single-Scope Engineering
 **Domain:** Standalone Labs & Prerequisites
 
+## System Architecture
+<img width="2752" height="1536" alt="single-scope-architecture" src="https://github.com/user-attachments/assets/placeholder" />
+
 ## Executive Summary
 
 This repository documents **standalone labs and prerequisite content** designed and validated for independent execution or integration into larger engineering systems.
@@ -153,12 +156,12 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 This engineering system operates within the following boundaries:
 
-- **Policy Constraints:** Lab scope limited to single tools or concepts; no full system implementations; standalone execution required ([constraints](./business-context.md#constraints))
-- **Organizational Constraints:** Team expertise and learning curve; integration with existing workflows; budget constraints ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** Lab independence required; resource isolation per lab; completion time <2 hours per lab ([constraints](./architecture.md#constraints))
-- **Cost Boundaries:** Lab costs <$10/month per lab; free-tier services preferred ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Lab scope limited to single tools or concepts; no full system implementations; standalone execution required ([constraints](./business-context.md))
+- **Organizational Constraints:** Team expertise and learning curve; integration with existing workflows; budget constraints ([constraints](./business-context.md))
+- **Technical Constraints:** Lab independence required; resource isolation per lab; completion time <2 hours per lab ([constraints](./architecture.md))
+- **Cost Boundaries:** Lab costs <$10/month per lab; free-tier services preferred ([cost model](./architecture.md))
 
-Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+Complete constraint definitions are documented in `business-context.md` and `architecture.md`.
 
 ---
 

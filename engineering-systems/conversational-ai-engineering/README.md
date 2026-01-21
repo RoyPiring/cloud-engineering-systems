@@ -156,12 +156,12 @@ These exclusions are deliberate and documented to preserve clarity and focus.
 
 This engineering system operates within the following boundaries:
 
-- **Policy Constraints:** Single language support (English); Amazon Lex for NLP services; no custom NLP model training ([constraints](./business-context.md#constraints))
-- **Organizational Constraints:** Team expertise in Lex and Lambda; limited budget for conversation costs (<$40/month for lab); integration with existing backend systems ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** Bot response time must be <3 seconds; intent recognition accuracy >85% minimum; single region deployment (us-east-1) ([constraints](./architecture.md#constraints))
-- **Cost Boundaries:** Conversational AI infrastructure budget <$40/month for lab environment ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Single language support (English); Amazon Lex for NLP services; no custom NLP model training ([constraints](./business-context.md))
+- **Organizational Constraints:** Team expertise in Lex and Lambda; limited budget for conversation costs (<$40/month for lab); integration with existing backend systems ([constraints](./business-context.md))
+- **Technical Constraints:** Bot response time must be <3 seconds; intent recognition accuracy >85% minimum; single region deployment (us-east-1) ([constraints](./architecture.md))
+- **Cost Boundaries:** Conversational AI infrastructure budget <$40/month for lab environment ([cost model](./architecture.md))
 
-Complete constraint definitions are documented in [`business-context.md`](./business-context.md#constraints) and [`architecture.md`](./architecture.md#constraints).
+Complete constraint definitions are documented in `business-context.md` and `architecture.md`.
 
 ---
 

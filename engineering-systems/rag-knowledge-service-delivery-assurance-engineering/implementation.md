@@ -47,46 +47,6 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Execution Path (Start to Finish)
-
-1. **[01-ai-devops-api.md](./executions/01-ai-devops-api.md)**: Build RAG API with FastAPI
-   - Set up Python and Ollama
-   - Create Python workspace with virtual environment
-   - Install dependencies (FastAPI, Chroma, Uvicorn, Ollama)
-   - Set up knowledge base with vector embeddings
-   - Build FastAPI application with query endpoint
-   - Test API with Swagger UI
-   - Add dynamic content endpoint
-
-2. **[02-ai-devops-docker.md](./executions/02-ai-devops-docker.md)**: Containerize RAG API with Docker
-   - Verify local API functionality
-   - Install Docker Desktop
-   - Create Dockerfile with base image, dependencies, application files
-   - Build Docker image
-   - Run containerized API
-   - Push image to Docker Hub
-
-3. **[03-ai-devops-kubernetes.md](./executions/03-ai-devops-kubernetes.md)**: Deploy RAG API to Kubernetes
-   - Prepare Docker image for deployment
-   - Install Minikube and kubectl
-   - Start Kubernetes cluster
-   - Load Docker image into Minikube
-   - Create Kubernetes Deployment
-   - Create Kubernetes Service
-   - Access API through NodePort
-   - Test self-healing behavior
-
-4. **[04-ai-devops-githubactions.md](./executions/04-ai-devops-githubactions.md)**: Automate Testing with GitHub Actions
-   - Set up RAG API repository
-   - Initialize Git and push to GitHub
-   - Create semantic tests
-   - Add mock LLM mode for deterministic testing
-   - Create GitHub Actions workflow
-   - Test data quality validation
-   - Scale with multiple documents
-
----
-
 ## Implementation Phases
 
 ### Phase 1: API Development
@@ -188,6 +148,15 @@ This sequencing is deliberate and designed to surface errors early.
 - Mock LLM mode enables deterministic validation
 - Data quality regressions detected
 - Multi-document changes validated
+
+---
+
+## Execution Path (Start to Finish)
+
+1. **[01-ai-devops-api.md](./executions/01-ai-devops-api.md)**: Build RAG API with FastAPI
+2. **[02-ai-devops-docker.md](./executions/02-ai-devops-docker.md)**: Containerize RAG API with Docker
+3. **[03-ai-devops-kubernetes.md](./executions/03-ai-devops-kubernetes.md)**: Deploy RAG API to Kubernetes
+4. **[04-ai-devops-githubactions.md](./executions/04-ai-devops-githubactions.md)**: Automate Testing with GitHub Actions
 
 ---
 

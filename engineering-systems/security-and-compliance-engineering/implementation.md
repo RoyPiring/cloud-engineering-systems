@@ -171,18 +171,6 @@ This sequencing is deliberate and designed to surface errors early.
 
 ---
 
-## Executions
-
-The `executions/` directory contains detailed guides for specific security implementations:
-
-1. **[IAM Least Privilege](./executions/01-iam-least-privilege.md)** - Identity and access management with least-privilege principles
-2. **[Secrets Management](./executions/02-secrets-management.md)** - Secure credential storage and automated rotation
-3. **[Boundary Enforcement](./executions/03-boundary-enforcement.md)** - Encryption boundaries and key management (KMS)
-4. **[Compliance Checklist](./executions/04-compliance-checklist.md)** - Security monitoring and compliance validation
-5. **[Evidence Collection](./executions/05-evidence-collection.md)** - Threat detection with GuardDuty and audit evidence
-
----
-
 ## Key Implementation Decisions
 
 ### Decision 1: Access Model
