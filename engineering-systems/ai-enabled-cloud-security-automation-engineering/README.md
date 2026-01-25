@@ -2,7 +2,7 @@
 **Domain:** Security Automation & AI/ML
 
 ## System Architecture
-<img width="2752" height="1536" alt="ai-enabled-cloud-security-automation-engineering-architecture" src="https://github.com/user-attachments/assets/[placeholder]" />
+<img width="2370" height="1282" alt="image" src="https://github.com/user-attachments/assets/ede2b5d0-6ccc-40b8-a37d-6e52409f5a11" />
 
 ## Executive Summary
 
