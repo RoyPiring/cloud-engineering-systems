@@ -17,13 +17,11 @@ This is not a step-by-step tutorial. It is an execution record.
 ## Implementation Scope
 
 ### In Scope
-- AI-powered threat detection configuration
-- Automated security response implementation
-- Security policy enforcement automation
-- Compliance validation automation
-- Code vulnerability scanning
-- Storage security assessment
-- Continuous security monitoring
+- boto3-based S3 security scanning and threat detection
+- AI-assisted remediation through Cursor with AWS MCP (interactive, not fully automated)
+- Code vulnerability scanning with Gemini API
+- Storage security assessment for S3 buckets
+- Continuous security monitoring via EventBridge-scheduled Lambda functions
 
 ### Explicitly Out of Scope
 - Multi-cloud security automation
@@ -57,14 +55,15 @@ This sequencing is deliberate and designed to surface errors early.
 **Objective:** Establish automated S3 security scanning with AI-assisted remediation.
 
 **Actions**
-- Install and configure Python environment with boto3
+- Install and configure Python 3.12+ environment with uv package manager
+- Install boto3 using uv
 - Configure AWS CLI authentication
-- Build S3 security scanner to examine bucket configurations
+- Build S3 security scanner using boto3 to examine bucket configurations
 - Check access control settings and bucket policies
 - Identify vulnerabilities such as public access
 - Integrate Cursor with AWS MCP for AI-assisted interaction
 - Test scanner with intentionally insecure bucket
-- Use AI to automatically remediate detected security issues
+- Use Cursor with AWS MCP to automatically remediate detected security issues through natural language prompts
 
 **Guardrails**
 - Error handling ensures scanner continues despite permission issues
@@ -84,9 +83,11 @@ This sequencing is deliberate and designed to surface errors early.
 
 **Actions**
 - Connect to Gemini API for code analysis
-- Create project environment and configure credentials
+- Create project environment using Python 3.12+ and uv package manager
+- Install Colorama library for color-coded output
+- Configure Gemini API credentials
 - Build vulnerability scanner with security-focused prompts
-- Implement severity classification with color-coded output
+- Implement severity classification (Critical, High, Medium, Low, Informational) with Colorama color-coding
 - Extend scanner to analyze entire Python files
 - Test scanner with intentionally vulnerable code samples
 
@@ -108,13 +109,13 @@ This sequencing is deliberate and designed to surface errors early.
 **Objective:** Deploy automated, continuous S3 security scanning using serverless architecture.
 
 **Actions**
-- Write Lambda function for S3 encryption scanning
-- Package code with dependencies for Lambda deployment
-- Create IAM role with least-privilege permissions
+- Write Lambda function for S3 encryption scanning using boto3
+- Package code with dependencies (boto3, google-generativeai) for Lambda deployment
+- Create IAM role with least-privilege permissions (read-only S3 access, Lambda execution)
 - Configure environment variables for Gemini API key
 - Deploy Lambda function to AWS
-- Test Lambda function execution and AI analysis
-- Configure EventBridge rule for scheduled execution
+- Test Lambda function execution and Gemini AI analysis
+- Configure EventBridge rule for scheduled execution (12-hour intervals)
 - Set up automated security scans every 12 hours
 
 **Guardrails**
@@ -145,33 +146,44 @@ This sequencing is deliberate and designed to surface errors early.
 
 ### Threat Detection Strategy
 - boto3-based scanning for S3 configuration analysis
-- AI-assisted analysis for contextual security insights
-- Manual and automated scanning approaches combined
+- Gemini API for AI-assisted analysis providing contextual security insights
+- Direct AWS API integration for programmatic control
 
 ### Automation Approach
 - Lambda functions for serverless security scanning
-- EventBridge for scheduled execution
-- Serverless architecture for scalability
+- EventBridge for scheduled execution (12-hour intervals)
+- Serverless architecture for scalability and cost efficiency
 
 ### AI Service Selection
 - Gemini API for code and configuration analysis
 - Structured prompts for consistent security analysis
-- External AI service for flexibility
+- External AI service for flexibility and advanced reasoning
+
+### Remediation Approach
+- Cursor with AWS MCP for AI-assisted remediation
+- Natural language interaction for security fixes
+- Interactive workflow for controlled remediation
 
 ### Code Scanning Model
-- File-based scanning for complete code analysis
-- Severity classification for prioritization
-- Color-coded output for visual clarity
+- File-based scanning for complete Python code analysis
+- Severity classification (Critical, High, Medium, Low, Informational) for prioritization
+- Colorama library for color-coded output (Critical=red, High=yellow, Medium=orange, Low=blue, Informational=green)
 
 ### Storage Security Model
-- Read-only access for scanning operations
-- Encryption-focused analysis
-- Continuous monitoring through scheduling
+- Read-only access for scanning operations via IAM roles
+- Encryption-focused analysis using boto3 and Gemini API
+- Continuous monitoring through EventBridge scheduling
 
 ### IAM Design
-- Least-privilege roles for security functions
-- Read-only permissions for scanning
+- Least-privilege roles for Lambda security functions
+- Read-only S3 permissions for scanning operations
 - Scoped access to specific resources
+
+### Development Tooling
+- Python 3.12+ for scripting and automation
+- uv package manager for dependency management
+- AWS CLI for authentication and configuration
+- Cursor IDE for development and AI-assisted workflows
 
 ---
 
@@ -179,12 +191,13 @@ This sequencing is deliberate and designed to surface errors early.
 
 | Scenario | Likely Cause | Response |
 |-------|------------|---------|
-| Scanner permission error | IAM role misconfiguration | Audit IAM roles, verify scanner permissions |
-| AI service unavailability | API outage or rate limiting | Implement retry logic, log errors for manual review |
-| False positive alerts | Overly sensitive detection rules | Tune detection thresholds, refine AI prompts |
-| Code scanning failure | File parsing error | Handle exceptions gracefully, continue with other files |
-| Storage scanning timeout | Large number of buckets | Implement pagination, process in batches |
-| Lambda deployment failure | Package size or dependency issue | Validate package size, optimize dependencies |
+| boto3 scanner permission error | IAM role misconfiguration | Audit IAM roles, verify read-only S3 permissions |
+| Gemini API unavailability | API outage or rate limiting | Implement retry logic, log errors for manual review |
+| AWS MCP connection failure | Authentication or credential issues | Verify Cursor AWS MCP configuration, re-authenticate |
+| Code scanning failure | File parsing error or Gemini API error | Handle exceptions gracefully, continue with other files |
+| Lambda execution timeout | Large number of buckets or slow API calls | Increase Lambda timeout, implement pagination for S3 buckets |
+| Lambda deployment failure | Package size or dependency issue | Validate package size, optimize dependencies (boto3, google-generativeai) |
+| EventBridge rule not triggering | Rule misconfiguration or target error | Verify EventBridge rule configuration, check Lambda function status |
 
 Failures are expected and planned for.
 

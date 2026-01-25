@@ -79,7 +79,7 @@ The system is built incrementally, with validation at each stage:
 3. Kubernetes orchestration with self-healing
 4. CI/CD automation with semantic testing
 
-Execution steps and sequencing are documented in `implementation.md`. See [Execution Path (Start to Finish)](./implementation.md#execution-path-start-to-finish) for the complete sequence.
+Execution steps and sequencing are documented in `implementation.md`.
 
 Validation is performed through explicit checks covering API functionality, containerization, orchestration, and CI/CD automation. Evidence and expected outcomes are documented in `validation.md`.
 

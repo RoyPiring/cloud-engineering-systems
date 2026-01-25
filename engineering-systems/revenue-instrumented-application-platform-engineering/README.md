@@ -31,13 +31,13 @@ This system addresses the measurable problem of:
 
 The system is evaluated against explicit, testable goals:
 
-- **Security:** Zero payment data exposure, webhook signature verification prevents unauthorized events, server-side pricing enforcement prevents manipulation ([validation evidence](./validation.md#webhook-security))
-- **Privacy Compliance:** No PII or payment data collected in analytics, privacy-safe event tracking verified, session replay excludes sensitive input fields ([validation evidence](./validation.md#privacy-compliant-tracking))
-- **Conversion Optimization:** Checkout funnel drop-off points identified, browser-specific conversion issues detected, A/B test experiments configured and measurable ([validation evidence](./validation.md#conversion-funnel))
-- **Deployment Speed:** Landing page deployed to production in <1 hour, Git-based deployment workflow functional, automatic HTTPS and edge delivery enabled ([validation evidence](./validation.md#vercel-deployment))
-- **Operational Security:** API keys stored securely in environment variables, webhook events cryptographically verified, server-side validation prevents client tampering ([validation evidence](./validation.md#stripe-api-configuration))
+- **Security:** Zero payment data exposure, webhook signature verification prevents unauthorized events, server-side pricing enforcement prevents manipulation
+- **Privacy Compliance:** No PII or payment data collected in analytics, privacy-safe event tracking verified, session replay excludes sensitive input fields
+- **Conversion Optimization:** Checkout funnel drop-off points identified, browser-specific conversion issues detected, A/B test experiments configured and measurable
+- **Deployment Speed:** Landing page deployed to production in <1 hour, Git-based deployment workflow functional, automatic HTTPS and edge delivery enabled
+- **Operational Security:** API keys stored securely in environment variables, webhook events cryptographically verified, server-side validation prevents client tampering
 
-These goals are validated through structured testing documented in [`validation.md`](./validation.md).
+These goals are validated through structured testing documented in `validation.md`.
 
 ---
 
@@ -52,7 +52,7 @@ These goals are validated through structured testing documented in [`validation.
 
 The design supports incremental integration of payment, analytics, and deployment components without architectural rework.
 
-Detailed architecture, tradeoffs, and failure models are documented in [`architecture.md`](./architecture.md).
+Detailed architecture, tradeoffs, and failure models are documented in `architecture.md`.
 
 ---
 
@@ -60,12 +60,12 @@ Detailed architecture, tradeoffs, and failure models are documented in [`archite
 
 This system makes the following deliberate decisions:
 
-- **Payment Security:** Server-side validation prevents manipulation, webhook signature verification ensures authenticity ([architecture security model](./architecture.md#security-model))
-- **Analytics Privacy:** Privacy-first tracking with aggregated data only, no PII collection ([architecture patterns](./architecture.md#architecture-patterns))
-- **Deployment Platform:** Managed platform (Vercel) for speed and operational simplicity over self-hosted complexity ([design decisions](./architecture.md#design-decisions))
-- **Webhook Security:** Always verify webhook signatures before processing to prevent fraud ([implementation decisions](./implementation.md#key-implementation-decisions))
+- **Payment Security:** Server-side validation prevents manipulation, webhook signature verification ensures authenticity
+- **Analytics Privacy:** Privacy-first tracking with aggregated data only, no PII collection
+- **Deployment Platform:** Managed platform (Vercel) for speed and operational simplicity over self-hosted complexity
+- **Webhook Security:** Always verify webhook signatures before processing to prevent fraud
 
-Each decision includes documented alternatives and rationale in [`architecture.md`](./architecture.md) and [`implementation.md`](./implementation.md).
+Each decision includes documented alternatives and rationale in `architecture.md` and `implementation.md`.
 
 ---
 

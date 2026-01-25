@@ -34,11 +34,11 @@ This system addresses the measurable problem of:
 
 The system is evaluated against explicit, testable goals:
 
-- **Threat Detection:** Security threats detected within 5 minutes, false positive rate reduced by 60%, security events correlated and prioritized automatically ([success criteria](./business-context.md#success-criteria-measurable))
-- **Incident Response:** Automated remediation actions execute within 2 minutes, mean time to resolution reduced by 50%, security playbooks execute automatically ([success criteria](./business-context.md#success-criteria-measurable))
-- **Code Security:** Vulnerabilities detected during development, security issues categorized by severity, actionable remediation guidance provided ([success criteria](./business-context.md#success-criteria-measurable))
-- **Storage Security:** S3 misconfigurations detected automatically, encryption gaps identified and reported, continuous monitoring enabled ([success criteria](./business-context.md#success-criteria-measurable))
-- **Operational Efficiency:** Security alert investigation time reduced by 70%, automated security reports generated without manual effort, security operations team productivity increased by 50% ([success criteria](./business-context.md#success-criteria-measurable))
+- **Threat Detection:** Security threats detected through boto3-based scanning, AI-powered analysis via Gemini API, security findings reported with severity classification
+- **Incident Response:** AI-assisted remediation through Cursor with AWS MCP enables faster security fixes, mean time to resolution reduced through interactive natural language workflows
+- **Code Security:** Vulnerabilities detected during development, security issues categorized by severity, actionable remediation guidance provided
+- **Storage Security:** S3 misconfigurations detected automatically, encryption gaps identified and reported, continuous monitoring enabled
+- **Operational Efficiency:** Security alert investigation time reduced by 70%, automated security reports generated without manual effort, security operations team productivity increased by 50%
 
 These goals are validated through structured testing documented in `validation.md`.
 
@@ -52,8 +52,10 @@ These goals are validated through structured testing documented in `validation.m
 - Lambda functions execute serverless security scanning
 - EventBridge schedules automated security assessments
 - Gemini API provides AI-powered code and configuration analysis
+- Cursor with AWS MCP enables AI-assisted remediation
 - IAM roles enforce least-privilege access for security functions
-- Dead-letter queues and retry policies ensure reliability
+- Colorama library provides color-coded severity output
+- uv package manager for Python dependency management
 
 The design scales from single-account automation to multi-account security orchestration without architectural redesign.
 
@@ -65,12 +67,14 @@ Detailed architecture, tradeoffs, and failure models are documented in `architec
 
 This system makes the following deliberate decisions:
 
-- **Threat Detection:** boto3-based scanning for S3 configuration analysis, AI-assisted analysis for contextual insights ([design decisions](./architecture.md#design-decisions))
-- **Automation Approach:** Lambda functions for serverless security scanning, EventBridge for scheduled execution ([design decisions](./architecture.md#design-decisions))
-- **AI Service Selection:** Gemini API for code and configuration analysis with structured prompts ([design decisions](./architecture.md#design-decisions))
-- **Code Scanning Model:** File-based scanning for complete code analysis, severity classification for prioritization ([design decisions](./architecture.md#design-decisions))
-- **Storage Security Model:** Read-only access for scanning operations, encryption-focused analysis ([design decisions](./architecture.md#design-decisions))
-- **IAM Design:** Least-privilege roles for security functions, scoped access to specific resources ([design decisions](./architecture.md#design-decisions))
+- **Threat Detection:** boto3-based scanning for S3 configuration analysis, AI-assisted analysis for contextual insights
+- **Automation Approach:** Lambda functions for serverless security scanning, EventBridge for scheduled execution
+- **AI Service Selection:** Gemini API for code and configuration analysis with structured prompts
+- **Remediation Approach:** Cursor with AWS MCP for AI-assisted remediation through natural language interaction
+- **Code Scanning Model:** File-based scanning for complete code analysis, severity classification with Colorama color-coding for prioritization
+- **Storage Security Model:** Read-only access for scanning operations, encryption-focused analysis
+- **IAM Design:** Least-privilege roles for security functions, scoped access to specific resources
+- **Development Tools:** Python 3.12+, uv for package management, AWS CLI for authentication
 
 Each decision includes documented alternatives and rationale in `architecture.md`.
 
@@ -84,7 +88,7 @@ The system is built incrementally, with validation at each stage:
 2. AI-powered code security scanning with vulnerability detection
 3. Serverless S3 security monitoring with continuous assessment
 
-Execution steps and sequencing are documented in `implementation.md`. See [Execution Path (Start to Finish)](./implementation.md#execution-path-start-to-finish) for the complete sequence.
+Execution steps and sequencing are documented in `implementation.md`.
 
 Validation is performed through explicit checks covering security scanning accuracy, AI analysis relevance, automated response reliability, code scanning effectiveness, storage scanning correctness, and cost behavior. Evidence and expected outcomes are documented in `validation.md`.
 
@@ -141,14 +145,12 @@ This repository is written for:
 ## Scope and Non-Goals
 
 **In Scope**
-- AI-powered threat detection and analysis
-- Automated security response and remediation
-- Security policy validation and enforcement
-- Code vulnerability scanning
-- Storage security assessment
-- Continuous security monitoring
-- Compliance checking and reporting
-- Security event correlation and prioritization
+- boto3-based S3 security scanning and threat detection
+- AI-assisted remediation through Cursor with AWS MCP
+- Code vulnerability scanning with Gemini API
+- Storage security assessment for S3 buckets (encryption, access controls)
+- Continuous security monitoring via EventBridge-scheduled scans
+- AI-powered security analysis and reporting
 
 **Out of Scope**
 - Multi-cloud security automation
@@ -158,7 +160,7 @@ This repository is written for:
 - Custom security orchestration tooling
 - Multi-region security automation
 
-These exclusions are deliberate and documented to preserve clarity and focus. Complete non-goals are documented in `business-context.md` under [Non-Goals](./business-context.md#non-goals).
+These exclusions are deliberate and documented to preserve clarity and focus. Complete non-goals are documented in `business-context.md`.
 
 ---
 
@@ -166,10 +168,10 @@ These exclusions are deliberate and documented to preserve clarity and focus. Co
 
 This engineering system operates within the following boundaries:
 
-- **Policy Constraints:** Single cloud provider (AWS only), no multi-cloud security automation, managed AI services preferred ([constraints](./business-context.md#constraints))
-- **Organizational Constraints:** Team skill sets limited to managed AI and security services, no custom AI model development, budget constraints ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** Threat detection must complete within 5 minutes, automated response must execute within 2 minutes, code scanning must complete within 30 seconds per file, single region deployment ([constraints](./business-context.md#constraints))
-- **Cost Boundaries:** Security automation infrastructure costs <$60/month for lab environment, production costs scale with usage ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Single cloud provider (AWS only), no multi-cloud security automation, managed AI services preferred
+- **Organizational Constraints:** Team skill sets limited to managed AI and security services, no custom AI model development, budget constraints
+- **Technical Constraints:** Threat detection must complete within 5 minutes, automated response must execute within 2 minutes, code scanning must complete within 30 seconds per file, single region deployment
+- **Cost Boundaries:** Security automation infrastructure costs <$60/month for lab environment, production costs scale with usage
 
 Complete constraint definitions are documented in `business-context.md` and `architecture.md`.
 

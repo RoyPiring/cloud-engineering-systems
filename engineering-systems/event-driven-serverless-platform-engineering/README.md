@@ -32,10 +32,10 @@ This system addresses the measurable problem of:
 
 The system is evaluated against explicit, testable goals:
 
-- **Scalability:** Functions scale automatically from zero to peak capacity, event processing handles traffic spikes, system responds to demand changes within seconds ([success criteria](./business-context.md#success-criteria-measurable))
-- **Cost Efficiency:** Pay-per-use model reduces idle resource costs, monthly serverless compute costs constrained to defined budget ([cost model](./architecture.md#cost-model))
-- **Reliability:** Function execution success rate >99.9%, event delivery guarantees met, automatic retry and error handling implemented, dead-letter queues capture failures ([reliability](./business-context.md#success-criteria-measurable))
-- **Operational Simplicity:** Zero server management required, deployment completes in <5 minutes, monitoring available without infrastructure setup, CI/CD pipeline automates deployments ([operational simplicity](./business-context.md#success-criteria-measurable))
+- **Scalability:** Functions scale automatically from zero to peak capacity, event processing handles traffic spikes, system responds to demand changes within seconds
+- **Cost Efficiency:** Pay-per-use model reduces idle resource costs, monthly serverless compute costs constrained to defined budget
+- **Reliability:** Function execution success rate >99.9%, event delivery guarantees met, automatic retry and error handling implemented, dead-letter queues capture failures
+- **Operational Simplicity:** Zero server management required, deployment completes in <5 minutes, monitoring available without infrastructure setup, CI/CD pipeline automates deployments
 
 These goals are validated through structured testing documented in `validation.md`.
 
@@ -63,13 +63,13 @@ Detailed architecture, tradeoffs, and failure models are documented in `architec
 
 This system makes the following deliberate decisions:
 
-- **Compute Model:** Azure Functions chosen for event-driven compute over containers ([design decisions](./architecture.md#design-decisions))
-- **Event Sources:** HTTP triggers for synchronous requests, Storage Queues for asynchronous processing ([core components](./architecture.md#core-components))
-- **State Management:** Cosmos DB selected for serverless data storage with partition key optimization ([core components](./architecture.md#core-components))
-- **AI Integration:** Gemini API for content analysis with fail-open patterns for resilience ([design decisions](./architecture.md#design-decisions))
-- **Workflow Orchestration:** Durable Functions for parallel event processing with fan-out and fan-in patterns ([design decisions](./architecture.md#design-decisions))
-- **Error Handling:** Dead-letter queues for failed message processing, retry policies for transient failures ([design decisions](./architecture.md#design-decisions))
-- **Deployment Automation:** Azure DevOps for integrated CI/CD with environment separation ([design decisions](./architecture.md#design-decisions))
+- **Compute Model:** Azure Functions chosen for event-driven compute over containers
+- **Event Sources:** HTTP triggers for synchronous requests, Storage Queues for asynchronous processing
+- **State Management:** Cosmos DB selected for serverless data storage with partition key optimization
+- **AI Integration:** Gemini API for content analysis with fail-open patterns for resilience
+- **Workflow Orchestration:** Durable Functions for parallel event processing with fan-out and fan-in patterns
+- **Error Handling:** Dead-letter queues for failed message processing, retry policies for transient failures
+- **Deployment Automation:** Azure DevOps for integrated CI/CD with environment separation
 
 Each decision includes documented alternatives and rationale in `architecture.md`.
 
@@ -85,7 +85,7 @@ The system is built incrementally, with validation at each stage:
 4. Production error handling with dead-letter queues
 5. Continuous deployment automation with multi-stage pipelines
 
-Execution steps and sequencing are documented in `implementation.md`. See [Execution Path (Start to Finish)](./implementation.md#execution-path-start-to-finish) for the complete sequence.
+Execution steps and sequencing are documented in `implementation.md`.
 
 Validation is performed through explicit checks covering function execution, event delivery, automatic scaling, AI integration, workflow orchestration, error handling, deployment automation, and cost behavior. Evidence and expected outcomes are documented in `validation.md`.
 
@@ -158,7 +158,7 @@ This repository is written for:
 - Serverless container orchestration
 - Multi-region deployment patterns
 
-These exclusions are deliberate and documented to preserve clarity and focus. Complete non-goals are documented in `business-context.md` under [Non-Goals](./business-context.md#non-goals).
+These exclusions are deliberate and documented to preserve clarity and focus. Complete non-goals are documented in `business-context.md`.
 
 ---
 
@@ -166,10 +166,10 @@ These exclusions are deliberate and documented to preserve clarity and focus. Co
 
 This engineering system operates within the following boundaries:
 
-- **Policy Constraints:** Single cloud provider (Azure only), no multi-cloud serverless deployment, managed services preferred ([constraints](./business-context.md#constraints))
-- **Organizational Constraints:** Team skill sets limited to managed serverless services, no custom runtime development, budget constraints ([constraints](./business-context.md#constraints))
-- **Technical Constraints:** Function deployment must complete in <5 minutes, cold start latency <2 seconds, single region deployment, CI/CD pipeline execution <20 minutes ([constraints](./business-context.md#constraints))
-- **Cost Boundaries:** Serverless infrastructure costs <$50/month for lab environment, production costs scale with usage ([cost model](./architecture.md#cost-model))
+- **Policy Constraints:** Single cloud provider (Azure only), no multi-cloud serverless deployment, managed services preferred
+- **Organizational Constraints:** Team skill sets limited to managed serverless services, no custom runtime development, budget constraints
+- **Technical Constraints:** Function deployment must complete in <5 minutes, cold start latency <2 seconds, single region deployment, CI/CD pipeline execution <20 minutes
+- **Cost Boundaries:** Serverless infrastructure costs <$50/month for lab environment, production costs scale with usage
 
 Complete constraint definitions are documented in `business-context.md` and `architecture.md`.
 

@@ -129,14 +129,13 @@ Validation against these criteria is documented in `validation.md`.
 
 The system must support:
 
-- AI-powered threat detection and analysis
-- Automated security response and remediation
-- Security policy validation and enforcement
-- Compliance checking and reporting
-- Security event correlation and prioritization
-- Code vulnerability scanning
-- Storage security assessment
-- Continuous security monitoring
+- AI-powered S3 security detection and analysis using boto3 and Gemini API
+- AI-assisted security remediation through Cursor with AWS MCP
+- Code vulnerability scanning with Gemini API and severity classification
+- Storage security assessment for S3 buckets (encryption, access controls)
+- Continuous security monitoring via EventBridge-scheduled Lambda functions
+- Color-coded vulnerability reporting for code security findings
+- File-based code scanning for complete Python code analysis
 
 ---
 

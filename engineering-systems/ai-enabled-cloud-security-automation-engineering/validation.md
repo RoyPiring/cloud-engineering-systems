@@ -31,12 +31,13 @@ No implementation detail.
 
 Validation covers:
 
-- AI-powered threat detection and analysis
-- Automated security response and remediation
-- Security policy validation and enforcement
-- Code vulnerability scanning
-- Storage security assessment
-- Continuous security monitoring
+- boto3-based S3 security scanning and configuration analysis
+- AI-assisted remediation through Cursor with AWS MCP
+- Gemini API-powered code vulnerability scanning with severity classification
+- Colorama-based color-coded vulnerability reporting
+- Lambda-based serverless S3 security monitoring
+- EventBridge-scheduled continuous security assessments
+- Gemini API-enhanced encryption analysis
 
 ---
 
@@ -44,10 +45,11 @@ Validation covers:
 
 | Test | Expected Result | Observed Result | Evidence |
 |----|----------------|----------------|----------|
-| Scanner execution | Scanner examines all S3 buckets and evaluates configurations | Scanner lists buckets and checks access control settings | 01-ai-aws-security-guard.md |
+| boto3 scanner execution | Scanner examines all S3 buckets and evaluates configurations using boto3 | Scanner lists buckets and checks access control settings | 01-ai-aws-security-guard.md |
 | Vulnerability detection | Insecure configurations identified | Scanner flags bucket with public read access as potential risk | 01-ai-aws-security-guard.md |
 | Error handling | Scanner continues despite permission issues | Error handling implemented with try/except blocks | 01-ai-aws-security-guard.md |
 | AWS MCP integration | Cursor connects to AWS for AI-assisted interaction | MCP connection configured and verified | 01-ai-aws-security-guard.md |
+| Python environment setup | Python 3.12+ with uv package manager configured | Environment set up with boto3 installed via uv | 01-ai-aws-security-guard.md |
 
 ---
 
@@ -66,11 +68,12 @@ Validation covers:
 | Test | Expected Result | Observed Result | Evidence |
 |----|----------------|----------------|----------|
 | Gemini API connection | API key configured and accessible | Connection verified by listing available Gemini models | 02-ai-security-audit.md |
-| Vulnerability detection | Security issues identified in code | Scanner detects SQL injection risks, hardcoded credentials, insecure library usage | 02-ai-security-audit.md |
+| Vulnerability detection | Security issues identified in code via Gemini API | Scanner detects SQL injection risks, hardcoded credentials, insecure library usage | 02-ai-security-audit.md |
 | Severity classification | Vulnerabilities categorized by severity | Severity ratings (Critical, High, Medium, Low, Informational) assigned | 02-ai-security-audit.md |
-| Color-coded output | Severity levels displayed with colors | Critical (red), High (yellow), Medium (orange), Low (blue), Informational (green) | 02-ai-security-audit.md |
+| Colorama color-coded output | Severity levels displayed with colors using Colorama library | Critical (red), High (yellow), Medium (orange), Low (blue), Informational (green) | 02-ai-security-audit.md |
 | File scanning | Scanner processes entire Python files | Scanner reads file contents and analyzes complete code | 02-ai-security-audit.md |
 | Security prompt effectiveness | Structured prompts produce accurate analysis | Prompts guide Gemini to identify realistic security issues | 02-ai-security-audit.md |
+| Python environment setup | Python with Colorama library installed | Colorama library configured for terminal color output | 02-ai-security-audit.md |
 
 ---
 
@@ -78,10 +81,11 @@ Validation covers:
 
 | Test | Expected Result | Observed Result | Evidence |
 |----|----------------|----------------|----------|
-| Lambda function deployment | Function packaged and deployed successfully | Function uploaded to AWS with handler and dependencies | 03-ai-aws-s3-security.md |
+| Lambda function deployment | Function packaged with boto3 and google-generativeai dependencies and deployed successfully | Function uploaded to AWS with handler and dependencies | 03-ai-aws-s3-security.md |
 | IAM role configuration | Least-privilege role created with appropriate permissions | Role grants read-only S3 access and Lambda execution permissions | 03-ai-aws-s3-security.md |
 | Environment variable configuration | Gemini API key stored securely | API key stored in Lambda environment variables | 03-ai-aws-s3-security.md |
-| Function execution | Lambda scans S3 buckets and analyzes encryption | Function retrieves S3 metadata and submits to Gemini for analysis | 03-ai-aws-s3-security.md |
+| boto3 S3 scanning | Lambda uses boto3 to scan S3 buckets and retrieve encryption configuration | Function retrieves S3 metadata using boto3 | 03-ai-aws-s3-security.md |
+| Gemini AI analysis | S3 configuration data submitted to Gemini for encryption analysis | Function submits S3 metadata to Gemini for analysis | 03-ai-aws-s3-security.md |
 | AI analysis output | Security findings reported with explanations | Lambda returns structured security report with encryption gaps and recommendations | 03-ai-aws-s3-security.md |
 | EventBridge scheduling | Scheduled scans execute automatically | EventBridge rule triggers Lambda every 12 hours | 03-ai-aws-s3-security.md |
 | Continuous monitoring | Security scans run without manual intervention | Automated execution provides proactive security monitoring | 03-ai-aws-s3-security.md |
