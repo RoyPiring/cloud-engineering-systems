@@ -2,7 +2,7 @@
 **Domain:** Serverless Compute & Event-Driven Architecture
 
 ## System Architecture
-<img width="2752" height="1536" alt="event-driven-serverless-platform-engineering-architecture" src="https://github.com/user-attachments/assets/[placeholder]" />
+<img width="2371" height="1287" alt="image" src="https://github.com/user-attachments/assets/e13f2b91-0511-41ba-82fd-cdad9ea4fbc7" />
 
 ## Executive Summary
 
