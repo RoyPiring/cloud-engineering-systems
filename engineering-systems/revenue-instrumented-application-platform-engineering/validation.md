@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document provides **objective validation evidence** that the revenue-instrumented application platform behaves exactly as designed.
+This document provides **objective validation evidence** that the Revenue-Instrumented Application Platform behaves exactly as designed.
 
 It records:
 - What was tested

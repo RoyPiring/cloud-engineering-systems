@@ -83,7 +83,7 @@ The following behaviors were explicitly verified:
 10. Unauthorized access attempts are blocked at security boundaries  
 
 Validation details and supporting evidence are documented in:  
-[validation.md](../../engineering-systems/vpc-networking-engineering/validation.md#validation-checks)
+[validation.md](../../engineering-systems/vpc-networking-engineering/validation.md#validation-summary)
 
 ---
 
