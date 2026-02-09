@@ -83,7 +83,7 @@ The following behaviors were explicitly verified:
 10. Audit trails enable full action traceability  
 
 Validation details and supporting evidence are documented in:  
-[validation.md](../../engineering-systems/security-and-compliance-engineering/validation.md#validation-checks)
+[validation.md](../../engineering-systems/security-and-compliance-engineering/validation.md#validation-summary)
 
 ---
 

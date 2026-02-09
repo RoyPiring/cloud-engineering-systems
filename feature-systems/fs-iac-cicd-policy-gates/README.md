@@ -80,7 +80,7 @@ The following behaviors were explicitly verified:
 10. Rollback triggers automatically on failure  
 
 Validation details and evidence are documented in:  
-[validation.md](../../engineering-systems/cicd-automation-engineering/validation.md#validation-checks)
+[validation.md](../../engineering-systems/cicd-automation-engineering/validation.md#validation-summary)
 
 ---
 
