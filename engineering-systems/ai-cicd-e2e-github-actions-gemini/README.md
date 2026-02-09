@@ -2,8 +2,7 @@
 **Domain:** Software Delivery & DevOps
 
 ## System Architecture
-
-See [architecture.md](./architecture.md) for system design, components, and patterns.
+<img width="2298" height="1271" alt="image" src="https://github.com/user-attachments/assets/3a0e1926-9dce-442d-a5b4-9b9dd1e2f01c" />
 
 ---
 
